@@ -2,30 +2,103 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>Box</title>
-    <link rel="stylesheet" href="../assets/reset.css"/>
-    <link rel="stylesheet" href="../assets/dpl.css"/>
-    <link rel="stylesheet" href="box.css"/>    
+    <title>KISSY DPL</title>
+    <link rel="stylesheet" href="../kissy/build/cssreset/reset.css"/>
+    <link rel="stylesheet" href="assets/docs.css"/>
 </head>
 <body>
-
-    <!-- box START -->
-    <div class="box">
-        <s class="box-tp"><b></b></s>
-        <div class="box-hd">
-            <i></i><h3>Box</h3>
-            <p>
-                <a href="#">close</a>
-                <a href="#">edit</a>
-            </p>
-        </div>
-        <div class="box-bd">
-            <!-- your code here -->
-        </div>
-        <div class="box-ft"></div>
-        <s class="box-bt"><b></b></s>
+    <div id="header">
+        <a class="logo" href="index.html"><img src="assets/logo.png" alt="KISSY DPL" width="220" height="74"/></a>
+        <p class="rel-nav">
+            <a href="https://github.com/kissyteam/kissy-dpl">src files</a>
+        </p>
     </div>
-    <!-- box END -->
+    <div id="content">
+        <div class="layout grid-s6m0">
+            <div class="col-main">
+                <div class="main-wrap">
+                    <pre class="s-bd">
+DPL(Design Patten Library)即设计模式库。
+我们为你提供了Web开发中常见模块的HTML结构和一套默认样式。
+在它的帮助下，你可以快速创建自己的页面结构和外观，并将精力专注于产品的业务逻辑上。
+                    </pre>
 
+                    <h3 class="s-title">使用说明：</h3>
+                    <pre class="s-bd">
+你可以从左侧的菜单进入查看各个模块的详情页面。
+每个模块都提供了便捷的HTML源码拷贝功能。
+
+我们为你提供的默认样式均依赖于<a href="#">reset.css</a>
+
+样式文件有两类：
+    style.css 这个文件包含了模块的显示、定位、尺寸等信息
+    custom.css  这个文件包含了模块文字大小、颜色、边框、背景等信息
+
+style.css比较稳定，而custom.css随着设计风格的不同比较容易发生变更
+如果要新建样式，一般来说你仅需要对custom.css进行修改
+如果你的页面设计风格非常独特，那么你也可以完全重写模块的样式
+                    </pre>
+
+                    <h3 class="s-title">最新稳定版本：</h3>
+                    <pre class="s-bd">
+v1.0.0 2010-12-30发布
+
+打包文件：
+<a href="#">reset.css</a>
+<a href="#">dpl-style.css</a>
+<a href="#">dpl-custom.css</a>
+<a href="#">dpl-aio.css</a> （包含style和custom）
+
+<a href="">changelog</a></pre>
+
+                    <h3 class="s-title">开发中的模块：</h3>
+                    <pre class="s-bd">
+Form ： 预期将于2011-02发布
+                    </pre>
+
+                    <h3 class="s-title">兼容性：</h3>
+                    <pre class="s-bd">
+IE9 beta
+IE6 / IE7 / IE8
+Firefox 3.6.+
+Chrome 4.0.+
+Safari 4.0.+
+Opera 10.+
+                    </pre>
+
+                </div>
+            </div>
+            <div class="col-sub">
+                <div class="sub-wrap">
+                    <div class="s-nav">
+                        <h3>Base Modules</h3>
+                        <ul>
+                            <li><a href="src/box/demo.html">Box</a></li>
+                            <li><a href="src/tabs/demo.html">Tabs</a></li>
+                            <li><a href="src/accordion/demo.html">Accordion</a></li>
+                            <li><a href="src/crumbs/demo.html">Crumbs</a></li>
+                            <li><a href="src/msg/demo.html">Message</a></li>
+                            <li><a href="src/flowsteps/demo.html">Flowsteps</a></li>
+                            <li><a href="src/pagination/demo.html">Pagination</a></li>
+                        </ul>
+                        <h3>Complex Modules</h3>
+                        <ul>
+                            <li><span>Form</span></li>
+                            <li><span>Table</span></li>
+                            <li><span>Tree</span></li>
+                        </ul>
+                        <h3>Related Modules</h3>
+                        <ul>
+                            <li><a href="../kissy/docs/cssreset/index.html">CSSReset</a></li>
+                            <li><a href="../kissy/docs/cssgrids/index.html">CSSGrids</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p class="copyright">&copy; 2009 - 2029 KISSY UI LIBRARY</p>
+    </div>
 </body>
 </html>

@@ -7,8 +7,8 @@
 .box-hd{position:relative;height:26px;padding:0 10px;}
 .box-hd i{float:left;width:16px;height:16px;margin:5px 4px 0 0;}
 .box-hd h3{display:inline;line-height:26px;}
-.box-hd p{position:absolute;right:10px;top:4px;}
-.box-hd p a{float:right;margin-left:5px;line-height:16px;}
+.box-act{position:absolute;right:10px;top:4px;}
+.box-act a{float:right;margin-left:5px;line-height:16px;}
 
 .box-tp,
 .box-bt{display:block;position:relative;height:4px;overflow:hidden;margin:0 0 -4px 0;z-index:10;}

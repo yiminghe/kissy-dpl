@@ -7,6 +7,8 @@
 .pagination  a:hover,
 .pagination  a:active{color:#f60;text-decoration:none;border:1px solid #f60;}
 
+.pagination span{color:#444;}
+
 .pagination .info{padding-top:1px;}
 
 .pagination .start,

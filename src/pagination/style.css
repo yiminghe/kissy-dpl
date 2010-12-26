@@ -3,7 +3,7 @@
  * @author fool2fish<fool2fish@gmail.com>
  */
 
-.pagination {height:22px;}
+.pagination {height:22px;margin-bottom:10px;}
 .pagination .wrapper{float:right;}
 
 .pagination  a{cursor:pointer;}

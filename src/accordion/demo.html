@@ -2,40 +2,101 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>Accordion</title>
-    <link rel="stylesheet" href="../../libs/reset.css"/>
+    <title>Accordion - KISSY DPL</title>
+    <link rel="stylesheet" href="../../../kissy/build/cssreset/reset.css"/>
     <link rel="stylesheet" href="../box/style.css"/>
     <link rel="stylesheet" href="../box/custom.css"/>
     <link rel="stylesheet" href="custom.css"/>
     <link rel="stylesheet" href="../../assets/docs.css"/>
+    <script src="../../../kissy/build/kissy-min.js"></script>
+    <script src="../../assets/docs.js"></script>
 </head>
 <body>
-
-    <!-- accordion START -->
-    <div class="box accordion">
-        <s class="box-tp"><b></b></s>
-        <div class="box-hd current">
-            <i></i><h3>Title 1</h3>
-        </div>
-        <div class="box-bd">
-            <!-- your code here -->
-        </div>
-        <div class="box-hd">
-            <i></i><h3>Title 2</h3>
-        </div>
-        <div class="box-bd" style="display:none;">
-            <!-- your code here -->
-        </div>
-        <div class="box-hd">
-            <i></i><h3>Title 3</h3>
-        </div>
-        <div class="box-bd" style="display:none;">
-            <!-- your code here -->
-        </div>
-        <s class="box-bt"><b></b></s>
+    <div id="header">
+        <a class="logo" href="../../index.html"><img src="../../assets/logo.png" alt="KISSY DPL" width="220" height="74"/></a>
+        <p class="rel-nav">
+            <a href="https://github.com/kissyteam/kissy-dpl">src files</a>
+        </p>
     </div>
-    <!-- box END -->
+    <div id="content">
+        <div class="layout grid-s6m0">
+            <div class="col-main">
+                <div class="main-wrap">
 
+                    <h3 class="s-title">CSS</h3>
+                    <div class="s-bd">
+                        <a href="../../../kissy/src/cssreset/reset.css">reset.css</a> (DPL公用) +
+                        <a href="../box/style.css">box-style.css</a> +
+                        <a href="../box/custom.css">box-custom.css</a> +
+                        <a href="custom.css">custom.css</a>
+                    </div>
+
+                    <h3 class="s-title">Demo</h3>
+                    <div class="s-bd">
+
+                        <div class="s-demo">
+                            <!-- accordion START -->
+                            <div class="box accordion">
+                                <s class="box-tp"><b></b></s>
+                                <div class="box-hd current">
+                                    <i></i><h3>Title 1</h3>
+                                </div>
+                                <div class="box-bd">
+                                    <!-- your code here -->
+                                </div>
+                                <div class="box-hd">
+                                    <i></i><h3>Title 2</h3>
+                                </div>
+                                <div class="box-bd" style="display:none;">
+                                    <!-- your code here -->
+                                </div>
+                                <div class="box-hd">
+                                    <i></i><h3>Title 3</h3>
+                                </div>
+                                <div class="box-bd" style="display:none;">
+                                    <!-- your code here -->
+                                </div>
+                                <s class="box-bt"><b></b></s>
+                            </div>
+                            <!-- accordion END -->
+                        </div>
+                        <a class="s-view-code" href="#">显示源码</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sub">
+                <div class="sub-wrap">
+                    <div class="s-nav">
+                        <h3>Base Modules</h3>
+                        <ul>
+                            <li><a href="../box/demo.html">Box</a></li>
+                            <li><a href="../tabs/demo.html">Tabs</a></li>
+                            <li><a href="../accordion/demo.html">Accordion</a></li>
+                            <li><a href="../crumbs/demo.html">Crumbs</a></li>
+                            <li><a href="../msg/demo.html">Message</a></li>
+                            <li><a href="../flowsteps/demo.html">Flowsteps</a></li>
+                            <li><a href="../pagination/demo.html">Pagination</a></li>
+                        </ul>
+                        <h3>Complex Modules</h3>
+                        <ul>
+                            <li><span>Form</span></li>
+                            <li><span>Table</span></li>
+                            <li><span>Tree</span></li>
+                        </ul>
+                        <h3>Related Modules</h3>
+                        <ul>
+                            <li><a href="../../../kissy/docs/cssreset/index.html">CSSReset</a></li>
+                            <li><a href="../../../kissy/docs/cssgrids/index.html">CSSGrids</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p class="copyright">&copy; 2009 - 2029 KISSY UI LIBRARY</p>
+    </div>
 </body>
 </html>
 
