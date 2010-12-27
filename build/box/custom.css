@@ -1,0 +1,15 @@
+/**
+ * Box Custom
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.box-hd{border:1px solid #bad6ff;border-bottom:none;background:#cce1ff url(../assets/bg-repeatx.png) repeat-x 0 -10px;}
+.box-bd{border:1px solid #bad6ff;background:#fff;}
+
+.box-tp,
+.box-tp b,
+.box-bt,
+.box-bt b{background:url(../assets/bg-repeatx.png) no-repeat -3px 0;}
+.box-tp b{background-position:0 0;}
+.box-bt{background-position:-3px -3px;}
+.box-bt b{background-position:0 -3px;}
