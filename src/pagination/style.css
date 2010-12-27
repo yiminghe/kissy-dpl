@@ -14,7 +14,7 @@
 .pagination .next,
 .pagination .end,
 .pagination .page,
-.pagination .skip,
+.pagination .skip-to,
 .pagination .data-limit{float:left;height:20px;margin-left:3px;line-height:20px;}
 
 .pagination .skip-to{margin-left:6px;}
