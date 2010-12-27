@@ -116,7 +116,7 @@
  */
 
 .pagination {height:22px;margin-bottom:10px;}
-.pagination .wrapper{float:right;}
+.pagination-wrapper{float:right;}
 
 .pagination  a{cursor:pointer;}
 
@@ -150,6 +150,14 @@
 .box-tp b{background-position:0 0;}
 .box-bt{background-position:-3px -3px;}
 .box-bt b{background-position:0 -3px;}/**
+ * Accordion Custom
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.accordion .box-hd{margin-top:-1px;border:1px solid #bad6ff;cursor:pointer;}
+.accordion .box-bd{border-top:none;border-bottom:none;}
+
+/**
  * Tabs Custom
  * @author fool2fish<fool2fish@gmail.com>
  */

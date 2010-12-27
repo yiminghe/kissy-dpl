@@ -116,7 +116,7 @@
  */
 
 .pagination {height:22px;margin-bottom:10px;}
-.pagination .wrapper{float:right;}
+.pagination-wrapper{float:right;}
 
 .pagination  a{cursor:pointer;}
 

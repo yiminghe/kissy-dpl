@@ -26,6 +26,7 @@
     <target name="concat">
         <concat destfile="${pkg.dir}/dpl-style-pkg.css" encoding="${charset}" outputencoding="${charset}">
             <path path="src/box/style.css"/>
+			<path path="src/accordion/style.css"/>
             <path path="src/msg/style.css"/>
             <path path="src/tabs/style.css"/>
             <path path="src/crumbs/style.css"/>
@@ -34,6 +35,7 @@
         </concat>
         <concat destfile="${pkg.dir}/dpl-custom-pkg.css" encoding="${charset}" outputencoding="${charset}">
             <path path="src/box/custom.css"/>
+			<path path="src/accordion/custom.css"/>
             <path path="src/msg/custom.css"/>
             <path path="src/tabs/custom.css"/>
             <path path="src/crumbs/custom.css"/>
