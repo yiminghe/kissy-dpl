@@ -1,0 +1,91 @@
+/**
+ * Box Custom
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.box-hd{border:1px solid #bad6ff;border-bottom:none;background:#cce1ff url(../assets/bg-repeatx.png) repeat-x 0 -10px;}
+.box-bd{border:1px solid #bad6ff;background:#fff;}
+
+.box-tp,
+.box-tp b,
+.box-bt,
+.box-bt b{background:url(../assets/bg-repeatx.png) no-repeat -3px 0;}
+.box-tp b{background-position:0 0;}
+.box-bt{background-position:-3px -3px;}
+.box-bt b{background-position:0 -3px;}/**
+ * Tabs Custom
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.tabs-hd{height:27px;margin-bottom:-1px;border:1px solid #bad6ff;border-bottom:none;background:#f2f2f2 url(../assets/bg-repeatx.png) repeat-x 0 -10px;}
+.tabs-trigger{margin-left:-1px;}
+.tabs .current{padding-left:11px;border-right:1px solid #bad6ff;border-left:1px solid #bad6ff;border-bottom:1px solid #fff;background:#fff;}
+.tabs .current h3{padding-right:11px;}
+.tabs-panel{border:1px solid #bad6ff;background:#fff;}
+
+.tabs-tp,
+.tabs-tp b,
+.tabs-bt,
+.tabs-bt b{background:url(../assets/bg-repeatx.png) no-repeat -3px 0;}
+.tabs-tp b{background-position:0 0;}
+.tabs-bt{background-position:-3px -3px;}
+.tabs-bt b{background-position:0 -3px;}
+
+/**
+ * Flowsteps Custom
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.flowsteps ol{background:#e4e4e4}
+.flowsteps li,
+.flowsteps span{background:url(../assets/flowsteps.png) no-repeat 0 0;}
+.flowsteps a{color:#f60;text-decoration:underline;}
+.flowsteps .last{background-position:100% -92px;}
+.flowsteps .current .last{
+    /* background-color:transparent;background-position:100% -115px;
+     * the upper statement it not suitable for opera
+     * opera will convert float to int which is the max one that not greater than the primary float
+     * so the primary background image cannot fill properly
+     */
+    background:url(../assets/flowsteps-for-opera.png) no-repeat 100% 0;
+}
+.flowsteps .done span{background-color: #ffe6ba;background-position: 0 -46px; color: #f60;}
+.flowsteps .current,
+.flowsteps .current span {background-color: #f60;background-position: 0 -46px;color: #fff;}
+.flowsteps .next{background-position: 0 -23px;}
+.flowsteps .next span{background-position:0 -22px;}
+.flowsteps .next .last{background-position:100% -92px}
+.flowsteps li .first{background-position:0 -69px}
+
+/**
+ * Pagination Custom
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.pagination  a{color:#04c;}
+.pagination  a:hover,
+.pagination  a:active{color:#f60;text-decoration:none;border:1px solid #f60;}
+
+.pagination span{color:#444;}
+
+.pagination .info{padding-top:1px;}
+
+.pagination .start,
+.pagination .prev,
+.pagination .next,
+.pagination .end,
+.pagination .page{padding:0 7px;border:1px solid #ccc;background:#fff url(../assets/pagination.png) no-repeat 1000px 1000px;}
+.pagination span.page{color:#f60;border:1px solid #f60;background-color:#ffede1;}
+
+.pagination .start,
+.pagination .prev{width:6px;overflow:hidden;line-height:1000px;}
+.pagination .next,
+.pagination .end{padding-right:14px;}
+.pagination span.start{background-position:0 -144px;}
+.pagination a.start{background-position:0 -114px;}
+.pagination span.prev{background-position:0 -24px;}
+.pagination a.prev{background-position:0 6px;}
+.pagination span.next{background-position:100% -84px;}
+.pagination a.next{background-position:100% -54px;}
+.pagination span.end{background-position:100% -204px;}
+.pagination a.end{background-position:100% -174px;}

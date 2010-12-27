@@ -1,26 +1,4 @@
 /**
- * Accordion Custom
- * @author fool2fish<fool2fish@gmail.com>
- */
-
-.accordion .box-hd{margin-top:-1px;border:1px solid #bad6ff;cursor:pointer;}
-.accordion .box-bd{border-top:none;border-bottom:none;}
-
-/**
- * Box Custom
- * @author fool2fish<fool2fish@gmail.com>
- */
-
-.box-hd{border:1px solid #bad6ff;border-bottom:none;background:#cce1ff url(../assets/bg-repeatx.png) repeat-x 0 -10px;}
-.box-bd{border:1px solid #bad6ff;background:#fff;}
-
-.box-tp,
-.box-tp b,
-.box-bt,
-.box-bt b{background:url(../assets/bg-repeatx.png) no-repeat -3px 0;}
-.box-tp b{background-position:0 0;}
-.box-bt{background-position:-3px -3px;}
-.box-bt b{background-position:0 -3px;}/**
  * Box Style
  * @author fool2fish<fool2fish@gmail.com>
  */
@@ -37,62 +15,6 @@
 .box-bt{margin:-4px 0 0 0;}
 .box-tp b,
 .box-bt b{display:block;float:right;width:4px;height:4px;overflow:hidden;}
-/**
- * Crumbs Style
- * @author fool2fish<fool2fish@gmail.com>
- */
-
-.crumbs{margin-bottom:10px;height:18px;line-height:18px;}
-.crumbs span,
-.crumbs a{float:left;}
-.crumbs a{
-    margin-right:4px;
-    padding:0 10px 0 0;
-    background:url(../assets/crumbs.png) no-repeat 100% 50%;
-}
-/**
- * Flowsteps Custom
- * @author fool2fish<fool2fish@gmail.com>
- */
-
-.flowsteps ol{background:#e4e4e4}
-.flowsteps li,
-.flowsteps span{background:url(../assets/flowsteps.png) no-repeat 0 0;}
-.flowsteps a{color:#f60;text-decoration:underline;}
-.flowsteps .last{background-position:100% -92px;}
-.flowsteps .current .last{
-    /* background-color:transparent;background-position:100% -115px;
-     * the upper statement it not suitable for opera
-     * opera will convert float to int which is the max one that not greater than the primary float
-     * so the primary background image cannot fill properly
-     */
-    background:url(../assets/flowsteps-for-opera.png) no-repeat 100% 0;
-}
-.flowsteps .done span{background-color: #ffe6ba;background-position: 0 -46px; color: #f60;}
-.flowsteps .current,
-.flowsteps .current span {background-color: #f60;background-position: 0 -46px;color: #fff;}
-.flowsteps .next{background-position: 0 -23px;}
-.flowsteps .next span{background-position:0 -22px;}
-.flowsteps .next .last{background-position:100% -92px}
-.flowsteps li .first{background-position:0 -69px}
-
-/**
- * Flowsteps Style
- * @author fool2fish<fool2fish@gmail.com>
- */
-
-.flowsteps {height:23px;margin-bottom:10px;*zoom:1;}
-.flowsteps ol{position:relative;overflow:hidden;;*zoom:1;}
-.flowsteps .num3 li, .flowsteps .num3 .last{ width: 33.3%; }
-.flowsteps .num4 li, .flowsteps .num4 .last { width: 24.9%; }
-.flowsteps .num5 li, .flowsteps .num5 .last { width:19.9%;}
-.flowsteps .num6 li, .flowsteps .num6 .last { width: 16.6%; }
-.flowsteps li{float:left;height:23px;overflow:hidden;font-size:14px;font-weight:bold;line-height:23px;text-align:center;}
-.flowsteps span{display:block;}
-.flowsteps .last{position:absolute;right:0;_right:-1px;_width:100%!important;}
-
-
-
 /**
  * Message Style
  * @author fool2fish<fool2fish@gmail.com>
@@ -141,6 +63,138 @@
 .msg-inline,
 .msg-inline .default{display:inline-block;*display:inline;*zoom:1;}
 /**
+ * Tabs Style
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.tabs{margin-bottom:10px;}
+.tabs-hd{height:26px;overflow:hidden;}
+.tabs-trigger{float:left;height:26px;padding-left:12px;cursor:pointer;}
+.tabs-trigger h3{float:left;padding-right:12px;line-height:26px;}
+.tabs-trigger a{display:block;}
+.tabs-trigger i{float:left;width:16px;height:16px;margin:5px 4px 0 0;}
+
+.tabs-tp,
+.tabs-bt{display:block;position:relative;height:4px;overflow:hidden;margin:0 0 -4px 0;z-index:10;}
+.tabs-bt{margin:-4px 0 0 0;}
+.tabs-tp b,
+.tabs-bt b{display:block;float:right;width:4px;height:4px;overflow:hidden;}
+
+/**
+ * Crumbs Style
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.crumbs{margin-bottom:10px;height:18px;line-height:18px;}
+.crumbs span,
+.crumbs a{float:left;}
+.crumbs a{
+    margin-right:4px;
+    padding:0 10px 0 0;
+    background:url(../assets/crumbs.png) no-repeat 100% 50%;
+}
+/**
+ * Flowsteps Style
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.flowsteps {height:23px;margin-bottom:10px;*zoom:1;}
+.flowsteps ol{position:relative;overflow:hidden;;*zoom:1;}
+.flowsteps .num3 li, .flowsteps .num3 .last{ width: 33.3%; }
+.flowsteps .num4 li, .flowsteps .num4 .last { width: 24.9%; }
+.flowsteps .num5 li, .flowsteps .num5 .last { width:19.9%;}
+.flowsteps .num6 li, .flowsteps .num6 .last { width: 16.6%; }
+.flowsteps li{float:left;height:23px;overflow:hidden;font-size:14px;font-weight:bold;line-height:23px;text-align:center;}
+.flowsteps span{display:block;}
+.flowsteps .last{position:absolute;right:0;_right:-1px;_width:100%!important;}
+
+
+
+/**
+ * Pagination Style
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.pagination {height:22px;margin-bottom:10px;}
+.pagination .wrapper{float:right;}
+
+.pagination  a{cursor:pointer;}
+
+.pagination .info,
+.pagination .start,
+.pagination .prev,
+.pagination .next,
+.pagination .end,
+.pagination .page,
+.pagination .skip,
+.pagination .data-limit{float:left;height:20px;margin-left:3px;line-height:20px;}
+
+.pagination .skip-to{margin-left:6px;}
+.pagination .skip-to input{width:32px;height:18px;margin:0 2px;line-height:20px;text-align:center;vertical-align:middle;border:1px solid #ccc;}
+.pagination .skip-to button{margin-left:2px;height:22px;line-height:14px;vertical-align:middle;}
+
+.pagination .data-limit{margin-left:10px;}
+.pagination .data-limit select{margin-left:2px;vertical-align:middle;}
+/**
+ * Box Custom
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.box-hd{border:1px solid #bad6ff;border-bottom:none;background:#cce1ff url(../assets/bg-repeatx.png) repeat-x 0 -10px;}
+.box-bd{border:1px solid #bad6ff;background:#fff;}
+
+.box-tp,
+.box-tp b,
+.box-bt,
+.box-bt b{background:url(../assets/bg-repeatx.png) no-repeat -3px 0;}
+.box-tp b{background-position:0 0;}
+.box-bt{background-position:-3px -3px;}
+.box-bt b{background-position:0 -3px;}/**
+ * Tabs Custom
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.tabs-hd{height:27px;margin-bottom:-1px;border:1px solid #bad6ff;border-bottom:none;background:#f2f2f2 url(../assets/bg-repeatx.png) repeat-x 0 -10px;}
+.tabs-trigger{margin-left:-1px;}
+.tabs .current{padding-left:11px;border-right:1px solid #bad6ff;border-left:1px solid #bad6ff;border-bottom:1px solid #fff;background:#fff;}
+.tabs .current h3{padding-right:11px;}
+.tabs-panel{border:1px solid #bad6ff;background:#fff;}
+
+.tabs-tp,
+.tabs-tp b,
+.tabs-bt,
+.tabs-bt b{background:url(../assets/bg-repeatx.png) no-repeat -3px 0;}
+.tabs-tp b{background-position:0 0;}
+.tabs-bt{background-position:-3px -3px;}
+.tabs-bt b{background-position:0 -3px;}
+
+/**
+ * Flowsteps Custom
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.flowsteps ol{background:#e4e4e4}
+.flowsteps li,
+.flowsteps span{background:url(../assets/flowsteps.png) no-repeat 0 0;}
+.flowsteps a{color:#f60;text-decoration:underline;}
+.flowsteps .last{background-position:100% -92px;}
+.flowsteps .current .last{
+    /* background-color:transparent;background-position:100% -115px;
+     * the upper statement it not suitable for opera
+     * opera will convert float to int which is the max one that not greater than the primary float
+     * so the primary background image cannot fill properly
+     */
+    background:url(../assets/flowsteps-for-opera.png) no-repeat 100% 0;
+}
+.flowsteps .done span{background-color: #ffe6ba;background-position: 0 -46px; color: #f60;}
+.flowsteps .current,
+.flowsteps .current span {background-color: #f60;background-position: 0 -46px;color: #fff;}
+.flowsteps .next{background-position: 0 -23px;}
+.flowsteps .next span{background-position:0 -22px;}
+.flowsteps .next .last{background-position:100% -92px}
+.flowsteps li .first{background-position:0 -69px}
+
+/**
  * Pagination Custom
  * @author fool2fish<fool2fish@gmail.com>
  */
@@ -171,65 +225,4 @@
 .pagination span.next{background-position:100% -84px;}
 .pagination a.next{background-position:100% -54px;}
 .pagination span.end{background-position:100% -204px;}
-.pagination a.end{background-position:100% -174px;}/**
- * Pagination Style
- * @author fool2fish<fool2fish@gmail.com>
- */
-
-.pagination {height:22px;margin-bottom:10px;}
-.pagination .wrapper{float:right;}
-
-.pagination  a{cursor:pointer;}
-
-.pagination .info,
-.pagination .start,
-.pagination .prev,
-.pagination .next,
-.pagination .end,
-.pagination .page,
-.pagination .skip,
-.pagination .data-limit{float:left;height:20px;margin-left:3px;line-height:20px;}
-
-.pagination .skip-to{margin-left:6px;}
-.pagination .skip-to input{width:32px;height:18px;margin:0 2px;line-height:20px;text-align:center;vertical-align:middle;border:1px solid #ccc;}
-.pagination .skip-to button{margin-left:2px;height:22px;line-height:14px;vertical-align:middle;}
-
-.pagination .data-limit{margin-left:10px;}
-.pagination .data-limit select{margin-left:2px;vertical-align:middle;}
-/**
- * Tabs Custom
- * @author fool2fish<fool2fish@gmail.com>
- */
-
-.tabs-hd{height:27px;margin-bottom:-1px;border:1px solid #bad6ff;border-bottom:none;background:#f2f2f2 url(../assets/bg-repeatx.png) repeat-x 0 -10px;}
-.tabs-trigger{margin-left:-1px;}
-.tabs .current{padding-left:11px;border-right:1px solid #bad6ff;border-left:1px solid #bad6ff;border-bottom:1px solid #fff;background:#fff;}
-.tabs .current h3{padding-right:11px;}
-.tabs-panel{border:1px solid #bad6ff;background:#fff;}
-
-.tabs-tp,
-.tabs-tp b,
-.tabs-bt,
-.tabs-bt b{background:url(../assets/bg-repeatx.png) no-repeat -3px 0;}
-.tabs-tp b{background-position:0 0;}
-.tabs-bt{background-position:-3px -3px;}
-.tabs-bt b{background-position:0 -3px;}
-
-/**
- * Tabs Style
- * @author fool2fish<fool2fish@gmail.com>
- */
-
-.tabs{margin-bottom:10px;}
-.tabs-hd{height:26px;overflow:hidden;}
-.tabs-trigger{float:left;height:26px;padding-left:12px;cursor:pointer;}
-.tabs-trigger h3{float:left;padding-right:12px;line-height:26px;}
-.tabs-trigger a{display:block;}
-.tabs-trigger i{float:left;width:16px;height:16px;margin:5px 4px 0 0;}
-
-.tabs-tp,
-.tabs-bt{display:block;position:relative;height:4px;overflow:hidden;margin:0 0 -4px 0;z-index:10;}
-.tabs-bt{margin:-4px 0 0 0;}
-.tabs-tp b,
-.tabs-bt b{display:block;float:right;width:4px;height:4px;overflow:hidden;}
-
+.pagination a.end{background-position:100% -174px;}
