@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <title>Form - KISSY DPL</title>
     <link rel="stylesheet" href="../../../kissy/build/cssreset/reset.css"/>
+    <link rel="stylesheet" href="../msg/style.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="../../assets/docs.css"/>
     <script src="../../../kissy/build/kissy-min.js"></script>
@@ -24,7 +25,8 @@
                     <h3 class="s-title">CSS</h3>
                     <div class="s-bd">
                         <a href="../../../kissy/src/cssreset/reset.css">reset.css</a> (DPL公用) +
-                        <a href="style.css">style.css</a>
+                        <a href="style.css">style.css</a> +
+                        <a href="../msg/style.css">msg.style.css</a>
                     </div>
 
                     <h3 class="s-title">Demo</h3>
@@ -33,13 +35,22 @@
                         <div class="s-demo">
                             <!-- {{{ form -->
                             <form class="form">
+
+                                <fieldset class="fieldset-collapsed">
+                                    <legend>
+                                        <i></i>
+                                        Collapsed Fieldset
+                                    </legend>
+                                    <div class="field-box">
+                                    </div>
+                                </fieldset>
                                 <fieldset>
                                     <legend>
                                         <i></i>
-                                        Fieldset Title
+                                        Expanded Fieldset
                                     </legend>
-                                    <div>
-                                        
+                                    <div class="field-box">
+
                                         <!-- {{{ field.input -->
                                         <div class="field">
                                             <div class="hd">
@@ -47,7 +58,17 @@
                                                 <label class="label">input：</label>
                                             </div>
                                             <div class="bd">
-                                                <input class="text" type="text"/>
+                                                <div class="cell">
+                                                    <input class="text" type="text"/>
+                                                </div>
+                                                <!-- {{{ msg -->
+                                                <div class="msg msg-inline">
+                                                    <div class="msg-default msg-tips">
+                                                        <i class="msg-icon"></i>
+                                                        <div class="msg-content">提示信息</div>
+                                                    </div>
+                                                </div>
+                                                <!-- msg }}} -->
                                             </div>
                                         </div>
                                         <!-- field.input }}} -->
@@ -59,7 +80,17 @@
                                                 <label class="label">password：</label>
                                             </div>
                                             <div class="bd">
-                                                <input class="password" type="password"/>
+                                                <div class="cell">
+                                                    <input class="password" type="password"/>
+                                                </div>
+                                                <!-- {{{ msg -->
+                                                <div class="msg msg-inline">
+                                                    <div class="msg-default msg-error">
+                                                        <i class="msg-icon"></i>
+                                                        <div class="msg-content">出错提示</div>
+                                                    </div>
+                                                </div>
+                                                <!-- msg }}} -->
                                             </div>
                                         </div>
                                         <!-- field.password }}} -->
@@ -71,7 +102,17 @@
                                                 <label class="label">file：</label>
                                             </div>
                                             <div class="bd">
-                                                <input type="file"/>
+                                                <div class="cell">
+                                                    <input type="file"/>
+                                                </div>
+                                                <!-- {{{ msg -->
+                                                <div class="msg msg-inline">
+                                                    <div class="msg-default msg-ok">
+                                                        <i class="msg-icon"></i>
+                                                        <div class="msg-content">校验通过</div>
+                                                    </div>
+                                                </div>
+                                                <!-- msg }}} -->
                                             </div>
                                         </div>
                                         <!-- field.file }}} -->
@@ -83,11 +124,13 @@
                                                 <label class="label">select：</label>
                                             </div>
                                             <div class="bd">
-                                                <select>
-                                                    <option>select...</option>
-                                                    <option value="1">male</option>
-                                                    <option value="0">female</option>
-                                                </select>
+                                                <div class="cell">
+                                                    <select>
+                                                        <option>select...</option>
+                                                        <option value="1">male</option>
+                                                        <option value="0">female</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- field.select }}} -->
@@ -99,8 +142,10 @@
                                                 <label class="label">radio：</label>
                                             </div>
                                             <div class="bd">
-                                                <input type="radio" /><label class="label">male</label>
-                                                <input type="radio" /><label class="label">female</label> 
+                                                <div class="cell">
+                                                    <input type="radio" /><label class="label">male</label>
+                                                    <input type="radio" /><label class="label">female</label>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- field.radio }}} -->
@@ -112,8 +157,10 @@
                                                 <label class="label">checkbox：</label>
                                             </div>
                                             <div class="bd">
-                                                <input type="checkbox" /><label class="label">male</label>
-                                                <input type="checkbox" /><label class="label">female</label>
+                                                <div class="cell">
+                                                    <input type="checkbox" /><label class="label">male</label>
+                                                    <input type="checkbox" /><label class="label">female</label>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- field.checkbox }}} -->
@@ -125,14 +172,86 @@
                                                 <label class="label">文件选择：</label>
                                             </div>
                                             <div class="bd">
-                                                <textarea></textarea>
+                                                <div class="cell">
+                                                    <textarea></textarea>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- field.textarea }}} -->
-                                        
+
                                     </div>
                                 </fieldset>
 
+                                <hr/>
+                                
+                                <div class="field-msg-inline">
+
+                                    <!-- {{{ field.input -->
+                                    <div class="field">
+                                        <div class="hd">
+                                            <span class="required">*</span>
+                                            <label class="label">input：</label>
+                                        </div>
+                                        <div class="bd">
+                                            <div class="cell">
+                                                <input class="text" type="text" />
+                                            </div>
+                                            <!-- {{{ msg -->
+                                            <div class="msg msg-inline">
+                                                <div class="msg-default msg-tips">
+                                                    <i class="msg-icon"></i>
+                                                    <div class="msg-content">提示信息</div>
+                                                </div>
+                                            </div>
+                                            <!-- msg }}} -->
+                                        </div>
+                                    </div>
+                                    <!-- field.input }}} -->
+
+                                    <!-- {{{ field.password -->
+                                    <div class="field">
+                                        <div class="hd">
+                                            <span class="required">*</span>
+                                            <label class="label">password：</label>
+                                        </div>
+                                        <div class="bd">
+                                            <div class="cell">
+                                                <input class="password" type="password"/>
+                                            </div>
+                                            <!-- {{{ msg -->
+                                            <div class="msg msg-inline">
+                                                <div class="msg-default msg-error">
+                                                    <i class="msg-icon"></i>
+                                                    <div class="msg-content">出错提示</div>
+                                                </div>
+                                            </div>
+                                            <!-- msg }}} -->
+                                        </div>
+                                    </div>
+                                    <!-- field.password }}} -->
+
+                                    <!-- {{{ field.file -->
+                                    <div class="field">
+                                        <div class="hd">
+                                            <span class="required">*</span>
+                                            <label class="label">file：</label>
+                                        </div>
+                                        <div class="bd">
+                                            <div class="cell">
+                                                <input type="file"/>
+                                            </div>
+                                            <!-- {{{ msg -->
+                                            <div class="msg msg-inline">
+                                                <div class="msg-default msg-ok">
+                                                    <i class="msg-icon"></i>
+                                                    <div class="msg-content">校验通过</div>
+                                                </div>
+                                            </div>
+                                            <!-- msg }}} -->
+                                        </div>
+                                    </div>
+                                    <!-- field.file }}} -->
+                                </div>
                                 <div class="button-box">
                                     <button class="button">button</button>
                                 </div>
@@ -157,12 +276,13 @@
                             <li><a href="../msg/demo.html">Message</a></li>
                             <li><a href="../flowsteps/demo.html">Flowsteps</a></li>
                             <li><a href="../pagination/demo.html">Pagination</a></li>
+                            <li><a href="../loading/demo.html">Loading</a></li>
                         </ul>
                         <h3>Complex Modules</h3>
                         <ul>
-                            <li><span>Form</span></li>
-                            <li><span>Table</span></li>
-                            <li><span>Tree</span></li>
+                            <li><a href="../form/demo.html">Form</a></li>
+                            <li><a href="../grid/demo.html">Grid</a></li>
+                            <li><a href="../tree/demo.html">Tree</a></li>
                         </ul>
                         <h3>Related Modules</h3>
                         <ul>
