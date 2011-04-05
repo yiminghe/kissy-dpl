@@ -31,11 +31,9 @@ hr{clear:both;margin:0 0 10px 0;border:none;border-top:1px dotted #ddd;height:0;
 
 .s-title{margin-bottom:10px;padding-bottom:3px;font-size:14px;border-bottom:1px dotted #ddd;}
 h4.s-title{padding-bottom:0;font-size:12px;border:none;}
-.s-bd{margin:0 0 10px 20px;}
-.s-view-code{float:right;margin-bottom:10px;}
+.s-bd{margin:0 0 10px 20px;overflow:hidden;}
+.s-view-code{float:right;margin:10px 0;}
 .s-code{clear:both;width:688px;height:100px;margin-bottom:10px;border:1px solid #ddd;}
-
-
 
 .box-hd i, .tabs-hd i{background:url(notice.png) no-repeat 0 0;}
 .box-bd, .tabs-panel{height:100px;}

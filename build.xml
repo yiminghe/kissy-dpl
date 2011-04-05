@@ -32,6 +32,10 @@
             <path path="src/crumbs/style.css"/>
             <path path="src/flowsteps/style.css"/>
             <path path="src/pagination/style.css"/>
+            <path path="src/loading/style.css"/>
+            <path path="src/grid/style.css"/>
+            <path path="src/tree/style.css"/>
+            <path path="src/form/style.css"/>
         </concat>
         <concat destfile="${pkg.dir}/dpl-custom-pkg.css" encoding="${charset}" outputencoding="${charset}">
             <path path="src/box/custom.css"/>

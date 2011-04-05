@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Grid - KISSY DPL</title>
+    <link rel="stylesheet" href="../../../kissy/build/cssreset/reset.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="../../assets/docs.css"/>
+    <script src="../../../kissy/build/kissy-min.js"></script>
+    <script src="../../assets/docs.js"></script>
+</head>
+<body>
+    <div id="header">
+        <a class="logo" href="../../index.html"><img src="../../assets/logo.png" alt="KISSY DPL" width="220" height="74"/></a>
+        <p class="rel-nav">
+            <a href="https://github.com/kissyteam/kissy-dpl">src files</a>
+        </p>
+    </div>
+    <div id="content">
+        <div class="layout grid-s6m0">
+            <div class="col-main">
+                <div class="main-wrap">
+
+                    <h3 class="s-title">CSS</h3>
+                    <div class="s-bd">
+                        <a href="../../../kissy/src/cssreset/reset.css">reset.css</a> (DPL公用) +
+                        <a href="style.css">style.css</a>
+                    </div>
+
+                    <h3 class="s-title">Demo</h3>
+                    <div class="s-bd">
+
+                        <div class="s-demo">
+                            <!-- {{{ grid -->
+                            <div class="grid grid-zebra">
+								<table class="table">
+									<caption>
+										表格
+									</caption>
+									<colgroup>
+										<col width="25" />
+										<col width="25" />
+										<col width="25" />
+										<col />
+										<col />
+										<col />
+										<col />
+										<col />
+									</colgroup>
+									<thead>
+										<tr class="row">
+											<th class="cell-extra"></th>
+											<th class="cell-extra"></th>
+											<th class="cell-extra"></th>
+											<th colspan="3">可排序列</th>
+											<th rowspan="2">鼠标划过行</th>
+										</tr>
+										<tr class="row">
+											<th class="cell-extra"></th>
+											<th class="cell-extra"><input type="checkbox" /></th>
+											<th class="cell-extra"></th>
+											<th class="cell-sortable">单行<i class="icon"></i></th>
+											<th class="cell-sortable cell-asc">展开行<i class="icon"></i></th>
+											<th class="cell-sortable cell-desc">被选中行<i class="icon"></i></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="row row-odd row-expanded">
+											<td class="cell-extra"><i class="icon-expand"></i></td>
+											<td class="cell-extra"><input type="checkbox" /></td>
+											<td class="cell-extra"><input type="radio" /></td>
+											<td>Y</td>
+											<td>Y</td>
+											<td>N</td>
+											<td>N</td>
+										</tr>
+										<tr class="row-extra row-odd row-expanded">
+											<td class="cell-extra"></td>
+											<td class="cell-extra"></td>
+											<td class="cell-extra"></td>
+											<td colspan="4">
+												extra info
+											</td>
+										</tr>
+										<tr class="row row-even">
+											<td class="cell-extra"><i class="icon-expand"></i></td>
+											<td class="cell-extra"><input type="checkbox" /></td>
+											<td class="cell-extra"><input type="radio" /></td>
+											<td>N</td>
+											<td>N</td>
+											<td>N</td>
+											<td>N</td>
+										</tr>
+										<tr class="row-extra row-even">
+											<td class="cell-extra"></td>
+											<td class="cell-extra"></td>
+											<td class="cell-extra"></td>
+											<td colspan="4">
+												extra info
+											</td>
+										</tr>
+                                        <tr class="row row-odd row-expanded row-selected">
+											<td class="cell-extra"><i class="icon-expand"></i></td>
+											<td class="cell-extra"><input type="checkbox" /></td>
+											<td class="cell-extra"><input type="radio" /></td>
+											<td>Y</td>
+											<td>Y</td>
+											<td>Y</td>
+											<td>N</td>
+										</tr>
+										<tr class="row-extra row-odd row-expanded row-selected">
+											<td class="cell-extra"></td>
+											<td class="cell-extra"></td>
+											<td class="cell-extra"></td>
+											<td colspan="4">
+												extra info
+											</td>
+										</tr>
+                                        <tr class="row row-odd row-expanded row-hover">
+											<td class="cell-extra"><i class="icon-expand"></i></td>
+											<td class="cell-extra"><input type="checkbox" /></td>
+											<td class="cell-extra"><input type="radio" /></td>
+											<td>N</td>
+											<td>Y</td>
+											<td>N</td>
+											<td>Y</td>
+										</tr>
+										<tr class="row-extra row-odd row-expanded row-hover">
+											<td class="cell-extra"></td>
+											<td class="cell-extra"></td>
+											<td class="cell-extra"></td>
+											<td colspan="4">
+												extra info
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+                            <!-- grid }}} -->
+                        </div>
+                        <a class="s-view-code" href="#">显示源码</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sub">
+                <div class="sub-wrap">
+                    <div class="s-nav">
+                        <h3>Base Modules</h3>
+                        <ul>
+                            <li><a href="../box/demo.html">Box</a></li>
+                            <li><a href="../tabs/demo.html">Tabs</a></li>
+                            <li><a href="../accordion/demo.html">Accordion</a></li>
+                            <li><a href="../crumbs/demo.html">Crumbs</a></li>
+                            <li><a href="../msg/demo.html">Message</a></li>
+                            <li><a href="../flowsteps/demo.html">Flowsteps</a></li>
+                            <li><a href="../pagination/demo.html">Pagination</a></li>
+                        </ul>
+                        <h3>Complex Modules</h3>
+                        <ul>
+                            <li><span>Form</span></li>
+                            <li><span>Table</span></li>
+                            <li><span>Tree</span></li>
+                        </ul>
+                        <h3>Related Modules</h3>
+                        <ul>
+                            <li><a href="../../../kissy/docs/cssreset/index.html">CSSReset</a></li>
+                            <li><a href="../../../kissy/docs/cssgrids/index.html">CSSGrids</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p class="copyright">&copy; 2009 - 2029 KISSY UI LIBRARY</p>
+    </div>
+</body>
+</html>

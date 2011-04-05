@@ -21,7 +21,7 @@
  */
 			
 .msg{margin-bottom:10px;}
-.msg-default{padding:3px 5px;border:1px solid #ffcc7f;background:#ffffe5;position:relative;min-height:20px;_height:20px;}
+.msg-default{padding:2px 5px;border:1px solid #ffcc7f;background:#ffffe5;position:relative;min-height:20px;_height:20px;}
 .msg-icon{float:left;width:16px;height:16px;margin:1px 5px 1px 0;font-size:0;line-height:0;background:url(../assets/msg.png) no-repeat 0 -160px;}
 .msg-title{display:inline;padding-right:2px;font-weight:bold;}
 .msg-content{display:inline;}
@@ -68,17 +68,17 @@
  */
 
 .tabs{margin-bottom:10px;}
-.tabs-hd{height:26px;overflow:hidden;}
-.tabs-trigger{float:left;height:26px;padding-left:12px;cursor:pointer;}
-.tabs-trigger h3{float:left;padding-right:12px;line-height:26px;}
-.tabs-trigger a{display:block;}
-.tabs-trigger i{float:left;width:16px;height:16px;margin:5px 4px 0 0;}
+.tabs .tabs-hd{height:26px;overflow:hidden;}
+.tabs .tabs-hd .trigger{float:left;height:26px;padding-left:12px;cursor:pointer;}
+.tabs .tabs-hd h3{float:left;padding-right:12px;line-height:26px;}
+.tabs .tabs-hd a{display:block;}
+.tabs .tabs-hd i{float:left;width:16px;height:16px;margin:5px 4px 0 0;}
 
-.tabs-tp,
-.tabs-bt{display:block;position:relative;height:4px;overflow:hidden;margin:0 0 -4px 0;z-index:10;}
-.tabs-bt{margin:-4px 0 0 0;}
-.tabs-tp b,
-.tabs-bt b{display:block;float:right;width:4px;height:4px;overflow:hidden;}
+.tabs .tabs-tp,
+.tabs .tabs-bt{display:block;position:relative;height:4px;overflow:hidden;margin:0 0 -4px 0;z-index:10;}
+.tabs .tabs-bt{margin:-4px 0 0 0;}
+.tabs .tabs-tp b,
+.tabs .tabs-bt b{display:block;float:right;width:4px;height:4px;overflow:hidden;}
 
 /**
  * Crumbs Style
@@ -136,6 +136,185 @@
 .pagination .data-limit{margin-left:10px;}
 .pagination .data-limit select{margin-left:2px;vertical-align:middle;}
 /**
+ * Loading
+ * @creator fool2fish<fool2fish@gmail.com>
+ */
+
+.loading{position:absolute;z-index:10000;}
+.loading .mask{left:0;top:0;width:100%;height:100%;background:url(../assets/bg-transparent.png);_background:#000;_filter:alpha(opacity=20);}
+.loading .icon{position:absolute;width:220px;height:19px;left:50%;top:50%;margin:-19px 0 0 -110px;padding-top:18px;font-style:normal;text-align:center;background:url(../assets/loading.gif) no-repeat;}
+
+
+/**
+ * Grid
+ * @creator fool2fish<fool2fish@gmail.com>
+ */
+
+/*一般设定*/
+.grid{overflow:hidden;}
+.grid-zebra .row-even td{background-color:#f9f9f9;}
+.grid .table{width:100%;table-layout:fixed;word-break:break-all;border:1px solid #ccc;}
+.grid caption{text-align:left;}
+.grid th,
+.grid td{padding:5px;text-align:left;}
+.grid th{line-height:14px;vertical-align:bottom;font-weight:bold;border:1px solid #ccc;background:#f2f2f2 url(../assets/bg-repeatx.png) repeat-x 0 -130px;}
+.grid td{vertical-align:top;border-top:1px solid #ccc;background:#fff;}
+
+/*排序相关*/
+.grid .cell-sortable{cursor:pointer;_text-decoration:underline;}
+.grid .cell-sortable .icon{display:inline-block;width:13px;height:13px;margin-left:5px;background:url(../assets/icon.png) no-repeat -100px -40px;}
+.grid .cell-sortable:hover{background:#dcdcdc url(../assets/bg-repeatx.png) repeat-x 0 -11px;}
+.grid .cell-asc .icon{background-position:-100px -20px;}
+.grid .cell-desc .icon{background-position:-80px -20px;}
+
+/*特殊列*/
+.grid .cell-extra{padding:5px 0;width:25px;text-align:center;border-right:1px solid #ccc;background:#f2f2f2 url(../assets/bg-repeaty.png) repeat-y -130px 0;}
+.grid tbody .cell-extra{background-color:#fff;}
+
+/*icon*/
+.grid .icon-expand{display:inline-block;width:13px;height:13px;margin:0 6px;cursor:pointer;background:url(../assets/icon.png) no-repeat -40px 0;}
+
+/*行相关*/
+.grid .row-extra td{border-top:1px dashed #ccc;}
+.grid .row-extra{display:none;}
+
+.grid .row-expanded{display:table-row;*display:block;}
+.grid .row-expanded .icon-expand{background-position:-60px 0;}
+
+.grid .row-hover td{background:#e8fcd6;}
+
+.grid .row-selected td{background:#e1edff!important;}
+.grid .row-selected td.cell-extra{background:#cce1ff url(../assets/bg-repeaty.png) repeat-y -11px 0!important}/**
+ * Tree Style
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+/***********************************************************************************************************************
+ * tree-default
+ **********************************************************************************************************************/
+
+/*分支*/
+.tree-default .branch .branch{margin-left:16px;}
+/*节点*/
+.tree-default .node{background:url(../assets/tree-vline.png) repeat-y 10px 0;}
+/*同级最后一个节点（不支持css3的悲剧）*/
+.tree-default .node-last{background:url(../assets/tree-vline.png) no-repeat 10px -92px;}
+/*节点主体*/
+.tree-default .anchor{overflow:hidden;zoom:1;background:url(../assets/tree-corner.png) no-repeat 10px -1px;*margin-bottom:-2px;}
+.tree-default .anchor:hover{background:#e1edff;}
+/*首列包裹*/
+.tree-default .wrapper{overflow:hidden;padding:2px 0 2px 20px;}
+/*节点内容*/
+.tree-default .col{float:left;}
+/*icon*/
+.tree-default .icon{float:left;width:16px;height:16px;margin:1px 2px 0 0;text-align:center;line-height:16px;}
+.tree-default .icon input{vertical-align:middle;}
+/*节点展开icon*/
+.tree-default .icon-expand{float:left;width:16px;height:16px;margin:1px 2px 0 -18px;background:url(../assets/icon.png) no-repeat -57px 2px;cursor:pointer;}
+/*节点的收起状态*/
+.tree-default .node-collapsed .expand-icon{background-position:-37px 2px;}
+.tree-default .node-collapsed .node{display:none;}
+
+
+/***********************************************************************************************************************
+ * tree grid
+ **********************************************************************************************************************/
+
+.tree-grid{border:1px solid #ccc;}
+.tree-grid .col{float:left;padding-left:10px;}
+
+.tree-grid .head{height:26px;background:#f2f2f2 url(../assets/bg-repeatx.png) repeat-x scroll 0 -130px;}
+.tree-grid .head .col{height:26px;margin-right:-1px;line-height:26px;font-weight:bold;border-right:1px solid #ccc;}
+
+.tree-grid .anchor{padding:4px 0;overflow:hidden;zoom:1;border-top:1px solid #ccc;}
+.tree-grid .node .node .anchor{border-top:1px dashed #ccc;}
+.tree-grid .anchor:hover{background-color:#e1edff;}
+.tree-grid .wrapper{float:left;_display:inline;}
+.tree-grid .wrapper .col{padding-left:0;border:none;}
+
+.tree-grid .node .wrapper{margin-right:-20px;padding-left:30px;}
+.tree-grid .node .node .wrapper{margin-right:-40px;padding-left:50px;}
+.tree-grid .node .node  .node .wrapper{margin-right:-60px;padding-left:70px;}
+.tree-grid .node .node .node  .node .wrapper{margin-right:-80px;padding-left:90px;}
+.tree-grid .node .node .node .node  .node .wrapper{margin-right:-100px;padding-left:110px;}
+
+.tree-grid .icon{float:left;width:16px;height:16px;margin:1px 2px 0 0;text-align:center;line-height:16px;}
+.tree-grid .icon input{vertical-align:middle;}
+.tree-grid .icon-expand{float:left;width:16px;height:16px;margin:1px 4px 0 -20px;background:url(../assets/icon.png) no-repeat -57px 2px;cursor:pointer;}
+
+.tree-grid .node-collapsed .expand-icon{background-position:-37px 2px;}
+.tree-grid .node-collapsed .node{display:none;}
+
+/***********************************************************************************************************************
+ * tree menu
+ **********************************************************************************************************************/
+
+.tree-menu{overflow:hidden;border:1px solid #ccc;border-top:none;}
+.tree-menu .anchor{padding:4px 0;overflow:hidden;zoom:1;font-weight:bold;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background:#f2f2f2 url(../assets/bg-repeatx.png) repeat-x scroll 0 -130px;*margin-bottom:-2px;}
+.tree-menu .node .node .anchor{margin-top:0;font-weight:normal;border-top:none;border-bottom:1px dashed #ccc;background:#fff;}
+.tree-menu .node .node .anchor:hover{background:#e1edff;}
+.tree-menu .wrapper{float:left;}
+.tree-menu .col{float:left;}
+
+.tree-menu .node .wrapper{margin-right:-20px;padding-left:30px;}
+.tree-menu .node .node .wrapper{margin-right:-40px;padding-left:50px;}
+.tree-menu .node .node  .node .wrapper{margin-right:-60px;padding-left:70px;}
+.tree-menu .node .node .node  .node .wrapper{margin-right:-80px;padding-left:90px;}
+.tree-menu .node .node .node .node  .node .wrapper{margin-right:-100px;padding-left:110px;}
+
+.tree-menu .icon{float:left;width:16px;height:16px;margin:1px 2px 0 0;text-align:center;line-height:16px;}
+.tree-menu .icon input{vertical-align:middle;}
+.tree-menu .icon-expand{float:left;width:16px;height:16px;margin:1px 4px 0 -20px;background:url(../assets/icon.png) no-repeat -57px 2px;cursor:pointer;}
+
+.tree-menu .node-collapsed .expand-icon{background-position:-37px 2px;}
+.tree-menu .node-collapsed .node{display:none;}
+
+
+
+/*
+ * note:
+ *     ie li 2px padding bottom bug
+ */
+
+/**
+ * Form
+ * @creator fool2fish<fool2fish@gmail.com>
+ */
+
+.form fieldset{min-height:24px;border:1px solid #ddd;}
+.form legend{margin-left:10px;font-weight:bold;}
+.form legend i{display:inline-block;width:13px;height:13px;vertical-align:middle;cursor:pointer;background:url(../assets/icon.png) no-repeat -40px 0;}
+
+.field{overflow:hidden;}
+.field .hd{float:left;width:120px;text-align:right;}
+.field .hd .required{display:inline;color:#f30;}
+.field .hd .label{display:inline;}
+.field .bd{margin-left:120px;margin-right:10px;padding-left:6px;}
+.field .bd .cell{margin-bottom:10px;}
+.field .bd label{margin:0 6px 0 2px;}
+.field .text,
+.field .password{width:150px;height:24px;line-height:24px;border:1px solid #ccc;}
+.field textarea{width:90%;height:54px;line-height:18px;border:1px solid #ccc;}
+
+.button-box{margin:8px 0;padding-top:8px;text-align:center;border-top:1px dashed #ccc;}
+.button{min-width:80px;height:28px;margin-right:5px;padding:1px 6px;*padding:0;font-weight:bold;font-size:14px;border:1px solid #80b2ff;background:url(../assets/bg-repeatx.png) repeat-x 0 -10px;cursor:pointer;}
+.button{
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 1px 1px 2px #999;
+    -khtml-box-shadow: 1px 1px 2px #999;
+    -webkit-box-shadow: 1px 1px 2px #999;
+    box-shadow: 1px 1px 2px #999;
+}
+.button:hover,
+.button:active{
+    -moz-box-shadow: 0px 0px 2px #aaa;
+    -khtml-box-shadow: 0px 0px 2px #aaa;
+    -webkit-box-shadow: 0px 0px 2px #aaa;
+    box-shadow: 0px 0px 2px #aaa;
+}/**
  * Box Custom
  * @author fool2fish<fool2fish@gmail.com>
  */
@@ -162,19 +341,18 @@
  * @author fool2fish<fool2fish@gmail.com>
  */
 
-.tabs-hd{height:27px;margin-bottom:-1px;border:1px solid #bad6ff;border-bottom:none;background:#f2f2f2 url(../assets/bg-repeatx.png) repeat-x 0 -10px;}
-.tabs-trigger{margin-left:-1px;}
-.tabs .current{padding-left:11px;border-right:1px solid #bad6ff;border-left:1px solid #bad6ff;border-bottom:1px solid #fff;background:#fff;}
-.tabs .current h3{padding-right:11px;}
-.tabs-panel{border:1px solid #bad6ff;background:#fff;}
+.tabs .tabs-hd{height:27px;margin-bottom:-1px;border:1px solid #bad6ff;border-bottom:none;background:#f2f2f2 url(../assets/bg-repeatx.png) repeat-x 0 -10px;}
+.tabs .tabs-hd .trigger{margin-left:-1px;border-left:1px solid #bad6ff;border-right:1px solid #bad6ff;}
+.tabs .tabs-hd .current{border-bottom:1px solid #fff;background:#fff;}
+.tabs .tabs-panel{border:1px solid #bad6ff;background:#fff;}
 
-.tabs-tp,
-.tabs-tp b,
-.tabs-bt,
-.tabs-bt b{background:url(../assets/bg-repeatx.png) no-repeat -3px 0;}
-.tabs-tp b{background-position:0 0;}
-.tabs-bt{background-position:-3px -3px;}
-.tabs-bt b{background-position:0 -3px;}
+.tabs .tabs-tp,
+.tabs .tabs-tp b,
+.tabs .tabs-bt,
+.tabs .tabs-bt b{background:url(../assets/bg-repeatx.png) no-repeat -3px 0;}
+.tabs .tabs-tp b{background-position:0 0;}
+.tabs .tabs-bt{background-position:-3px -3px;}
+.tabs .tabs-bt b{background-position:0 -3px;}
 
 /**
  * Flowsteps Custom

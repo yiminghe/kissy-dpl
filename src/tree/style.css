@@ -1,0 +1,92 @@
+/**
+ * Tree Style
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+/***********************************************************************************************************************
+ * tree-default
+ **********************************************************************************************************************/
+
+/*分支*/
+.tree-default .branch .branch{margin-left:16px;}
+/*节点*/
+.tree-default .node{background:url(../assets/tree-vline.png) repeat-y 10px 0;}
+/*同级最后一个节点（不支持css3的悲剧）*/
+.tree-default .node-last{background:url(../assets/tree-vline.png) no-repeat 10px -92px;}
+/*节点主体*/
+.tree-default .anchor{overflow:hidden;zoom:1;background:url(../assets/tree-corner.png) no-repeat 10px -1px;*margin-bottom:-2px;}
+.tree-default .anchor:hover{background:#e1edff;}
+/*首列包裹*/
+.tree-default .wrapper{overflow:hidden;padding:2px 0 2px 20px;}
+/*节点内容*/
+.tree-default .col{float:left;}
+/*icon*/
+.tree-default .icon{float:left;width:16px;height:16px;margin:1px 2px 0 0;text-align:center;line-height:16px;}
+.tree-default .icon input{vertical-align:middle;}
+/*节点展开icon*/
+.tree-default .icon-expand{float:left;width:16px;height:16px;margin:1px 2px 0 -18px;background:url(../assets/icon.png) no-repeat -57px 2px;cursor:pointer;}
+/*节点的收起状态*/
+.tree-default .node-collapsed .expand-icon{background-position:-37px 2px;}
+.tree-default .node-collapsed .node{display:none;}
+
+
+/***********************************************************************************************************************
+ * tree grid
+ **********************************************************************************************************************/
+
+.tree-grid{border:1px solid #ccc;}
+.tree-grid .col{float:left;padding-left:10px;}
+
+.tree-grid .head{height:26px;background:#f2f2f2 url(../assets/bg-repeatx.png) repeat-x scroll 0 -130px;}
+.tree-grid .head .col{height:26px;margin-right:-1px;line-height:26px;font-weight:bold;border-right:1px solid #ccc;}
+
+.tree-grid .anchor{padding:4px 0;overflow:hidden;zoom:1;border-top:1px solid #ccc;}
+.tree-grid .node .node .anchor{border-top:1px dashed #ccc;}
+.tree-grid .anchor:hover{background-color:#e1edff;}
+.tree-grid .wrapper{float:left;_display:inline;}
+.tree-grid .wrapper .col{padding-left:0;border:none;}
+
+.tree-grid .node .wrapper{margin-right:-20px;padding-left:30px;}
+.tree-grid .node .node .wrapper{margin-right:-40px;padding-left:50px;}
+.tree-grid .node .node  .node .wrapper{margin-right:-60px;padding-left:70px;}
+.tree-grid .node .node .node  .node .wrapper{margin-right:-80px;padding-left:90px;}
+.tree-grid .node .node .node .node  .node .wrapper{margin-right:-100px;padding-left:110px;}
+
+.tree-grid .icon{float:left;width:16px;height:16px;margin:1px 2px 0 0;text-align:center;line-height:16px;}
+.tree-grid .icon input{vertical-align:middle;}
+.tree-grid .icon-expand{float:left;width:16px;height:16px;margin:1px 4px 0 -20px;background:url(../assets/icon.png) no-repeat -57px 2px;cursor:pointer;}
+
+.tree-grid .node-collapsed .expand-icon{background-position:-37px 2px;}
+.tree-grid .node-collapsed .node{display:none;}
+
+/***********************************************************************************************************************
+ * tree menu
+ **********************************************************************************************************************/
+
+.tree-menu{overflow:hidden;border:1px solid #ccc;border-top:none;}
+.tree-menu .anchor{padding:4px 0;overflow:hidden;zoom:1;font-weight:bold;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background:#f2f2f2 url(../assets/bg-repeatx.png) repeat-x scroll 0 -130px;*margin-bottom:-2px;}
+.tree-menu .node .node .anchor{margin-top:0;font-weight:normal;border-top:none;border-bottom:1px dashed #ccc;background:#fff;}
+.tree-menu .node .node .anchor:hover{background:#e1edff;}
+.tree-menu .wrapper{float:left;}
+.tree-menu .col{float:left;}
+
+.tree-menu .node .wrapper{margin-right:-20px;padding-left:30px;}
+.tree-menu .node .node .wrapper{margin-right:-40px;padding-left:50px;}
+.tree-menu .node .node  .node .wrapper{margin-right:-60px;padding-left:70px;}
+.tree-menu .node .node .node  .node .wrapper{margin-right:-80px;padding-left:90px;}
+.tree-menu .node .node .node .node  .node .wrapper{margin-right:-100px;padding-left:110px;}
+
+.tree-menu .icon{float:left;width:16px;height:16px;margin:1px 2px 0 0;text-align:center;line-height:16px;}
+.tree-menu .icon input{vertical-align:middle;}
+.tree-menu .icon-expand{float:left;width:16px;height:16px;margin:1px 4px 0 -20px;background:url(../assets/icon.png) no-repeat -57px 2px;cursor:pointer;}
+
+.tree-menu .node-collapsed .expand-icon{background-position:-37px 2px;}
+.tree-menu .node-collapsed .node{display:none;}
+
+
+
+/*
+ * note:
+ *     ie li 2px padding bottom bug
+ */
+

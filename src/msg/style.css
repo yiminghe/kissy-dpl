@@ -4,7 +4,7 @@
  */
 			
 .msg{margin-bottom:10px;}
-.msg-default{padding:3px 5px;border:1px solid #ffcc7f;background:#ffffe5;position:relative;min-height:20px;_height:20px;}
+.msg-default{padding:2px 5px;border:1px solid #ffcc7f;background:#ffffe5;position:relative;min-height:20px;_height:20px;}
 .msg-icon{float:left;width:16px;height:16px;margin:1px 5px 1px 0;font-size:0;line-height:0;background:url(../assets/msg.png) no-repeat 0 -160px;}
 .msg-title{display:inline;padding-right:2px;font-weight:bold;}
 .msg-content{display:inline;}
