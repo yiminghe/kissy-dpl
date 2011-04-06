@@ -12,15 +12,15 @@
 .form .field-box{padding-top:10px;}
 
 .form .field{overflow:hidden;clear:both;}
-.form .field .hd{float:left;width:120px;text-align:right;}
+.form .field .hd{float:left;width:140px;text-align:right;}
 .form .field .hd .required{display:inline;color:#f30;}
 .form .field .hd .label{display:inline;}
-.form .field .bd{padding:0 10px 0 126px;}
+.form .field .bd{padding:0 10px 0 146px;}
 .form .field .bd .cell{margin-bottom:10px;text-align:left;}
 .form .field .bd label{margin:0 6px 0 2px;}
 .form .field .text,
 .form .field .password{width:150px;height:24px;line-height:24px;border:1px solid #ccc;}
-.form .field textarea{width:300px;height:54px;line-height:18px;border:1px solid #ccc;}
+.form .field textarea{width:400px;height:54px;line-height:18px;border:1px solid #ccc;}
 
 .form .button-box{margin:8px 0;padding-top:8px;text-align:center;border-top:1px dashed #ccc;}
 .form .button{min-width:80px;height:28px;margin-right:5px;padding:1px 6px;*padding:0;font-weight:bold;font-size:14px;border:1px solid #80b2ff;background:url(../assets/bg-repeatx.png) repeat-x 0 -10px;cursor:pointer;}

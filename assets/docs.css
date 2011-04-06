@@ -5,6 +5,8 @@
 a{color:#1f75cc;}
 hr{clear:both;margin:0 0 10px 0;border:none;border-top:1px dotted #ddd;height:0;overflow:hidden;}
 
+.tag{padding-left:4px;font-size:10px;color:#f30!important;}
+
 #header,
 #content,
 #footer{width:950px;margin:0 auto;}
