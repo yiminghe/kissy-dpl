@@ -221,25 +221,24 @@
  */
 
 /*一般设定*/
-.grid{overflow:hidden;}
+.grid{width:100%;overflow:hidden;}
 .grid-zebra .row-even td{background-color:#f9f9f9;}
-.grid .table{width:100%;table-layout:fixed;word-break:break-all;border:1px solid #ccc;}
+.grid .table{width:100%;border:1px solid #ccc;}
 .grid caption{text-align:left;}
 .grid th,
-.grid td{padding:5px;text-align:left;}
-.grid th{line-height:14px;vertical-align:bottom;font-weight:bold;border:1px solid #ccc;background:#f2f2f2 url(../assets/bg-repeatx.png) repeat-x 0 -130px;}
+.grid td{padding:5px 10px;text-align:left;}
+.grid th{height:18px;line-height:14px;vertical-align:bottom;font-weight:bold;border:1px solid #ccc;background:#f2f2f2 url(../assets/bg-repeatx.png) repeat-x 0 -130px;}
 .grid td{vertical-align:top;border-top:1px solid #ccc;background:#fff;}
 
 /*排序相关*/
 .grid .cell-sortable{cursor:pointer;_text-decoration:underline;}
 .grid .cell-sortable .icon{display:inline-block;width:13px;height:13px;margin-left:5px;background:url(../assets/icon.png) no-repeat -100px -40px;}
-.grid .cell-sortable:hover{background:#dcdcdc url(../assets/bg-repeatx.png) repeat-x 0 -11px;}
+.grid .cell-sortable:hover{background:#cce1ff url(../assets/bg-repeatx.png) repeat-x 0 -11px;}
 .grid .cell-asc .icon{background-position:-100px -20px;}
 .grid .cell-desc .icon{background-position:-80px -20px;}
 
 /*特殊列*/
-.grid .cell-extra{padding:5px 0;width:25px;text-align:center;border-right:1px solid #ccc;background:#f2f2f2 url(../assets/bg-repeaty.png) repeat-y -130px 0;}
-.grid tbody .cell-extra{background-color:#fff;}
+.grid .cell-extra{width:25px;padding:5px 0;text-align:center;text-indent:0;border-right:1px solid #ccc;background:#f2f2f2 url(../assets/bg-repeaty.png) repeat-y -130px 0;}
 
 /*icon*/
 .grid .icon-expand{display:inline-block;width:13px;height:13px;margin:0 6px;cursor:pointer;background:url(../assets/icon.png) no-repeat -40px 0;}
@@ -352,15 +351,15 @@
 .form .field-box{padding-top:10px;}
 
 .form .field{overflow:hidden;clear:both;}
-.form .field .hd{float:left;width:120px;text-align:right;}
+.form .field .hd{float:left;width:140px;text-align:right;}
 .form .field .hd .required{display:inline;color:#f30;}
 .form .field .hd .label{display:inline;}
-.form .field .bd{padding:0 10px 0 126px;}
+.form .field .bd{padding:0 10px 0 146px;}
 .form .field .bd .cell{margin-bottom:10px;text-align:left;}
 .form .field .bd label{margin:0 6px 0 2px;}
 .form .field .text,
 .form .field .password{width:150px;height:24px;line-height:24px;border:1px solid #ccc;}
-.form .field textarea{width:300px;height:54px;line-height:18px;border:1px solid #ccc;}
+.form .field textarea{width:400px;height:54px;line-height:18px;border:1px solid #ccc;}
 
 .form .button-box{margin:8px 0;padding-top:8px;text-align:center;border-top:1px dashed #ccc;}
 .form .button{min-width:80px;height:28px;margin-right:5px;padding:1px 6px;*padding:0;font-weight:bold;font-size:14px;border:1px solid #80b2ff;background:url(../assets/bg-repeatx.png) repeat-x 0 -10px;cursor:pointer;}
