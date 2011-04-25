@@ -1,5 +1,11 @@
 
-KISSY Design Pattern Library
+KISSY设计模式库
 
-HTML/CSS 模式库
+设计模式库即Design Pattern Library，简称DPL
+
+DPL为你总结了Web开发中常见模块的HTML结构
+
+我们为你提供了默认的base主题
+
+你可以机遇默认主题创建自己的设计模式库
 
