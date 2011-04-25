@@ -6,9 +6,9 @@
 
 #header {overflow:hidden;background:url(toy.jpg) no-repeat 82% 0;border-bottom: 1px solid #ace;}
 #header .logo{float:left;margin:20px 0 0 0;padding:0;border:none;}
-#header .sub-title{float:left;margin:50px 0 0 5px;font:bold 28px "Microsoft YaHei";color:#aaa;}
-#header .desc{float:left;margin-top:60px;margin-left:5px;font-size:15px;color:#80c269;font-weight:bold;font-family: "Microsoft YaHei";}
-#header  .navigation {float:right;margin:60px 0 0 0;overflow:hidden;list-style:none;}
+#header .sub-title{float:left;margin:45px 5px 0 5px;font:25px "Microsoft YaHei";color:#aaa;}
+#header .desc{float:left;margin-top:55px;margin-left:5px;font-size:15px;color:#80c269;font-weight:bold;font-family: "Microsoft YaHei";}
+#header  .navigation {float:right;margin:55px 0 0 0;overflow:hidden;list-style:none;}
 #header  .navigation li {float:left;margin-left:-1px;padding: 0 10px 0 25px;line-height:1em;border-left:1px solid #ddd;background:url(bullet.gif) no-repeat 12px 50%;}
 
 #content{margin-bottom:10px;}
@@ -77,7 +77,7 @@
 a.s-current{color:#f60;text-decoration:underline;}
 
 /*面包屑*/
-.s-crumbs{margin-bottom:10px;padding:5px 10px;overflow:hidden;line-height:18px;border-bottom: 1px solid #ace;background:#f2f2f2 url(bg-repeatx.png) repeat-x 0 -10px;}
+.s-crumbs{padding:5px 10px;overflow:hidden;line-height:18px;border-bottom: 1px solid #ace;background:#f2f2f2 url(bg-repeatx.png) repeat-x 0 -10px;}
 .s-crumbs span,
 .s-crumbs a{float:left;margin-left:2px;}
 .s-crumbs a{

@@ -8,6 +8,7 @@
     <property name="build.dir" location="${current.dir}/build/"/>    
 
     <target name="copy">
+    	<delete dir="${build.dir}" />
         <mkdir dir="${build.dir}" />
         <mkdir dir="${build.dir}/img" />
         <mkdir dir="${build.dir}/css" />
