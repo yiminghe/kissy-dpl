@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>表单(Form) - 设计模式库</title>
+    <link rel="stylesheet" href="../reset/reset.css"/>    
+    <link rel="stylesheet" href="../../assets/kissy-docs.css"/>
+	<link rel="stylesheet" href="form.css"/>
+	<link rel="stylesheet" href="../msg/msg.css"/>
+	<style>
+		body{padding:10px;}
+	</style>
+    <script src="../../assets/kissy.js"></script>
+    <script src="../../assets/kissy-docs.js"></script>
+</head>
+<body>
+    <h3 class="s-title">CSS</h3>
+	<div class="s-section">
+		<a href="../reset/reset.css">reset.css</a> +
+		<a href="../msg/msg.css">msg.css</a> +
+		<a href="form.css">form.css</a>
+	</div>
+
+    <h3 class="s-title">Demo</h3>
+    <div class="s-section">
+
+        <div class="s-demo">
+            <!-- {{{ form -->
+            <form class="form">
+
+                <fieldset class="fieldset-collapsed">
+                    <legend>
+                        <i></i>
+                        Collapsed Fieldset
+                    </legend>
+                    <div class="field-box">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <i></i>
+                        Expanded Fieldset
+                    </legend>
+                    <div class="field-box">
+
+                        <!-- {{{ field.input -->
+                        <div class="field">
+                            <div class="hd">
+                                <span class="required">*</span>
+                                <label class="label">input：</label>
+                            </div>
+                            <div class="bd">
+                                <div class="cell">
+                                    <input class="text" type="text"/>
+                                </div>
+                                <!-- {{{ msg -->
+                                <div class="msg msg-inline">
+                                    <div class="msg-default msg-tips">
+                                        <i class="msg-icon"></i>
+                                        <div class="msg-content">common tips</div>
+                                    </div>
+                                </div>
+                                <!-- msg }}} -->
+                            </div>
+                        </div>
+                        <!-- field.input }}} -->
+
+                        <!-- {{{ field.password -->
+                        <div class="field">
+                            <div class="hd">
+                                <span class="required">*</span>
+                                <label class="label">password：</label>
+                            </div>
+                            <div class="bd">
+                                <div class="cell">
+                                    <input class="password" type="password"/>
+                                </div>
+                                <!-- {{{ msg -->
+                                <div class="msg msg-inline">
+                                    <div class="msg-default msg-error">
+                                        <i class="msg-icon"></i>
+                                        <div class="msg-content">error message</div>
+                                    </div>
+                                </div>
+                                <!-- msg }}} -->
+                            </div>
+                        </div>
+                        <!-- field.password }}} -->
+
+                        <!-- {{{ field.file -->
+                        <div class="field">
+                            <div class="hd">
+                                <span class="required">*</span>
+                                <label class="label">file：</label>
+                            </div>
+                            <div class="bd">
+                                <div class="cell">
+                                    <input type="file"/>
+                                </div>
+                                <!-- {{{ msg -->
+                                <div class="msg msg-inline">
+                                    <div class="msg-default msg-ok">
+                                        <i class="msg-icon"></i>
+                                        <div class="msg-content">validate success</div>
+                                    </div>
+                                </div>
+                                <!-- msg }}} -->
+                            </div>
+                        </div>
+                        <!-- field.file }}} -->
+
+                        <!-- {{{ field.select -->
+                        <div class="field">
+                            <div class="hd">
+                                <span class="required">*</span>
+                                <label class="label">select：</label>
+                            </div>
+                            <div class="bd">
+                                <div class="cell">
+                                    <select>
+                                        <option>select...</option>
+                                        <option value="1">male</option>
+                                        <option value="0">female</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- field.select }}} -->
+
+                        <!-- {{{ field.radio -->
+                        <div class="field">
+                            <div class="hd">
+                                <span class="required">*</span>
+                                <label class="label">radio：</label>
+                            </div>
+                            <div class="bd">
+                                <div class="cell">
+                                    <input type="radio" /><label class="label">male</label>
+                                    <input type="radio" /><label class="label">female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- field.radio }}} -->
+
+                        <!-- {{{ field.checkbox -->
+                        <div class="field">
+                            <div class="hd">
+                                <span class="required">*</span>
+                                <label class="label">checkbox：</label>
+                            </div>
+                            <div class="bd">
+                                <div class="cell">
+                                    <input type="checkbox" /><label class="label">male</label>
+                                    <input type="checkbox" /><label class="label">female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- field.checkbox }}} -->
+
+                        <!-- {{{ field.textarea -->
+                        <div class="field">
+                            <div class="hd">
+                                <span class="required">*</span>
+                                <label class="label">textarea：</label>
+                            </div>
+                            <div class="bd">
+                                <div class="cell">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- field.textarea }}} -->
+
+                    </div>
+                </fieldset>
+
+                <hr/>
+                
+                <div class="field-msg-inline">
+
+                    <!-- {{{ field.input -->
+                    <div class="field">
+                        <div class="hd">
+                            <span class="required">*</span>
+                            <label class="label">input：</label>
+                        </div>
+                        <div class="bd">
+                            <div class="cell">
+                                <input class="text" type="text" />
+                            </div>
+                            <!-- {{{ msg -->
+                            <div class="msg msg-inline">
+                                <div class="msg-default msg-tips">
+                                    <i class="msg-icon"></i>
+                                    <div class="msg-content">common tips</div>
+                                </div>
+                            </div>
+                            <!-- msg }}} -->
+                        </div>
+                    </div>
+                    <!-- field.input }}} -->
+
+                    <!-- {{{ field.password -->
+                    <div class="field">
+                        <div class="hd">
+                            <span class="required">*</span>
+                            <label class="label">password：</label>
+                        </div>
+                        <div class="bd">
+                            <div class="cell">
+                                <input class="password" type="password"/>
+                            </div>
+                            <!-- {{{ msg -->
+                            <div class="msg msg-inline">
+                                <div class="msg-default msg-error">
+                                    <i class="msg-icon"></i>
+                                    <div class="msg-content">error message</div>
+                                </div>
+                            </div>
+                            <!-- msg }}} -->
+                        </div>
+                    </div>
+                    <!-- field.password }}} -->
+
+                    <!-- {{{ field.file -->
+                    <div class="field">
+                        <div class="hd">
+                            <span class="required">*</span>
+                            <label class="label">file：</label>
+                        </div>
+                        <div class="bd">
+                            <div class="cell">
+                                <input type="file"/>
+                            </div>
+                            <!-- {{{ msg -->
+                            <div class="msg msg-inline">
+                                <div class="msg-default msg-ok">
+                                    <i class="msg-icon"></i>
+                                    <div class="msg-content">validate success</div>
+                                </div>
+                            </div>
+                            <!-- msg }}} -->
+                        </div>
+                    </div>
+                    <!-- field.file }}} -->
+                </div>
+				
+				<hr/>
+				
+                <div class="button-box">
+                    <button class="button">button</button>
+                </div>
+                
+			</form>
+            <!-- form }}} -->
+        </div>
+        <a class="s-view-code" href="#">显示源码</a>
+
+    </div>
+</body>
+</html>

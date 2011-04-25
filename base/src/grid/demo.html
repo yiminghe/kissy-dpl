@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>数据表格(Grid) - 设计模式库</title>
+    <link rel="stylesheet" href="../reset/reset.css"/>    
+    <link rel="stylesheet" href="../../assets/kissy-docs.css"/>
+	<link rel="stylesheet" href="grid.css"/>
+	<style>
+		body{padding:10px;}
+	</style>
+    <script src="../../assets/kissy.js"></script>
+    <script src="../../assets/kissy-docs.js"></script>
+</head>
+<body>
+	<h3 class="s-title">CSS</h3>
+	<div class="s-section">
+		<a href="../reset/reset.css">reset.css</a> +
+		<a href="grid.css">grid.css</a>
+	</div>
+	
+    <h3 class="s-title">Demo</h3>
+    <div class="s-section">
+
+        <div class="s-demo">
+            <!-- {{{ grid -->
+            <div class="grid grid-zebra">
+				<table class="table">
+					<caption>
+						表格
+					</caption>
+					<colgroup>
+						<col width="25" />
+						<col width="25" />
+						<col width="25" />
+						<col/>
+						<col/>
+						<col/>
+						<col/>
+					</colgroup>
+					<thead>
+						<tr class="row">
+							<th class="cell-extra"></th>
+							<th class="cell-extra"></th>
+							<th class="cell-extra"></th>
+							<th colspan="3">可排序列</th>
+							<th rowspan="2">鼠标划过行</th>
+						</tr>
+						<tr class="row">
+							<th class="cell-extra"></th>
+							<th class="cell-extra"><input type="checkbox" /></th>
+							<th class="cell-extra"></th>
+							<th class="cell-sortable">单行<i class="icon"></i></th>
+							<th class="cell-sortable cell-asc">展开行<i class="icon"></i></th>
+							<th class="cell-sortable cell-desc">被选中行<i class="icon"></i></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="row row-odd row-expanded">
+							<td class="cell-extra"><i class="icon-expand"></i></td>
+							<td class="cell-extra"><input type="checkbox" /></td>
+							<td class="cell-extra"><input type="radio" /></td>
+							<td>Y</td>
+							<td>Y</td>
+							<td>N</td>
+							<td>N</td>
+						</tr>
+						<tr class="row-extra row-odd row-expanded">
+							<td class="cell-extra"></td>
+							<td class="cell-extra"></td>
+							<td class="cell-extra"></td>
+							<td colspan="4">
+								extra info
+							</td>
+						</tr>
+						<tr class="row row-even">
+							<td class="cell-extra"><i class="icon-expand"></i></td>
+							<td class="cell-extra"><input type="checkbox" /></td>
+							<td class="cell-extra"><input type="radio" /></td>
+							<td>N</td>
+							<td>N</td>
+							<td>N</td>
+							<td>N</td>
+						</tr>
+						<tr class="row-extra row-even">
+							<td class="cell-extra"></td>
+							<td class="cell-extra"></td>
+							<td class="cell-extra"></td>
+							<td colspan="4">
+								extra info
+							</td>
+						</tr>
+                        <tr class="row row-odd row-expanded row-selected">
+							<td class="cell-extra"><i class="icon-expand"></i></td>
+							<td class="cell-extra"><input type="checkbox" /></td>
+							<td class="cell-extra"><input type="radio" /></td>
+							<td>Y</td>
+							<td>Y</td>
+							<td>Y</td>
+							<td>N</td>
+						</tr>
+						<tr class="row-extra row-odd row-expanded row-selected">
+							<td class="cell-extra"></td>
+							<td class="cell-extra"></td>
+							<td class="cell-extra"></td>
+							<td colspan="4">
+								extra info
+							</td>
+						</tr>
+                        <tr class="row row-odd row-expanded row-hover">
+							<td class="cell-extra"><i class="icon-expand"></i></td>
+							<td class="cell-extra"><input type="checkbox" /></td>
+							<td class="cell-extra"><input type="radio" /></td>
+							<td>N</td>
+							<td>Y</td>
+							<td>N</td>
+							<td>Y</td>
+						</tr>
+						<tr class="row-extra row-odd row-expanded row-hover">
+							<td class="cell-extra"></td>
+							<td class="cell-extra"></td>
+							<td class="cell-extra"></td>
+							<td colspan="4">
+								extra info
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+            <!-- grid }}} -->
+        </div>
+        <a class="s-view-code" href="#">显示源码</a>
+
+    </div>
+</body>
+</html>

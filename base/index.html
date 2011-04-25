@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>KISSY 设计模式库</title> 
+	<link rel="shortcut icon" href="assets/favicon.ico"/> 
+	<link rel="stylesheet" href="assets/reset.css"/> 
+	<link rel="stylesheet" href="assets/kissy-docs.css"/> 	
+	<script src="assets/kissy.js"></script> 
+	<script src="assets/kissy-docs.js"></script> 
+</head>
+<body>
+    <div id="header"> 
+		<h1 class="logo"><a alt="KISSY" href="http://docs.kissyui.com/"><img src="assets/logo.png"/></a></h1> 
+		<div class="sub-title">设计模式库</div>
+		<ul class="navigation"> 
+			<li><a href="http://kissyui.com/blog/">博客</a></li> 
+			<li><a href="http://docs.kissyui.com/">首页</a></li> 
+		</ul> 
+	</div> 
+    <div id="content">
+        <div class="layout grid-s6m0">
+            <div class="col-main">
+                <div class="main-wrap" id="S_Container">
+					<pre class="s-section">
+设计模式库(Design Patten Library)为你总结了Web开发中常见模块的HTML结构，并提供一整套默认样式。
+					</pre>
+					
+					<h3 class="s-title">使用说明：</h3>
+					<pre class="s-section">
+每个模块都提供了便捷的HTML源码拷贝功能。
+每个模块都标识了依赖的CSS文件。
+你也可以根据需要对样式进行修改。
+					</pre>
+
+					<h3 class="s-title">最近修改：</h3>
+					<pre class="s-section">
+[+] loading：加载中提示
+[+] form：简单表单，测试中
+[+] grid：数据表格
+[+] tree：树
+[↑] 去除组件的custom.css，每个组件仅依赖于style.css
+[↑] 修改部分组件的css选择器写法为一律以组件class名开头
+					</pre>
+
+					<h3 class="s-title">资源文件：</h3>
+					<pre class="s-section">
+合并文件（压缩文件在文件名后加“-min”即可）：
+<a href="build/css/dpl-pkg.css">dpl-pkg.css</a>
+样式压缩包：
+<a href="build/dpl.zip">dpl.zip</a>
+					</pre>
+
+					<h3 class="s-title">兼容性：</h3>
+					<pre class="s-section">
+IE9 beta
+IE6 / IE7 / IE8
+Firefox 3.6.+
+Chrome 4.0.+
+Safari 4.0.+
+Opera 10.+
+					</pre>
+				</div>
+            </div>
+            <div class="col-sub">
+				<div class="sub-wrap"> 
+					<h3 class="s-title">模块列表</h3> 
+					<div class="s-section"> 
+						<ul id="S_List" class="s-list">
+							<li><a href="src/page/demo.html">空白页 | page</a></li>
+                            <li><a href="src/reset/demo.html">样式重置 | reset</a></li>
+							<li><a href="src/layout/demo.html">布局 | layout</a></li>
+                            <li><a href="src/box/demo.html">盒子 | Box</a></li>
+                            <li><a href="src/tabs/demo.html">卡盘 | Tabs</a></li>
+                            <li><a href="src/accordion/demo.html">手风琴 | Accordion</a></li>
+                            <li><a href="src/crumbs/demo.html">面包屑 | Crumbs</a></li>
+                            <li><a href="src/msg/demo.html">信息 | Message</a></li>
+                            <li><a href="src/flowsteps/demo.html">步骤条 | Flowsteps</a></li>
+                            <li><a href="src/pagination/demo.html">翻页 | Pagination</a></li>
+                            <li><a href="src/loading/demo.html">加载提示 | Loading</a></li>
+							<li><a href="src/form/demo.html">表单 | Form</a></li>
+                            <li><a href="src/grid/demo.html">数据表格 | Grid</a></li>
+                            <li><a href="src/tree/demo.html">树 | Tree</a></li>
+                        </ul>
+					</div> 
+				</div> 
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        &copy; Copyright 2010~2011, KISSY Team.
+    </div>
+	<script>
+		KISSY.ready(function(S){
+			var D = S.DOM, E = S.Event, doc = document,
+				container = D.get('#S_Container'), ifm, curTarget, curCls = 's-current';
+			
+			//点击左侧菜单链接，右侧以iframe的形式载入组件demo
+			function switchLink(link){
+				container.innerHTML = '<iframe id="S_Ifm" frameborder="0" style="width:100%;height:400px;overflow:hidden;border:none;"></iframe>';
+				ifm = D.get('#S_Ifm');
+				trueSwitchLink(link);
+				switchLink = trueSwitchLink
+			}
+			function trueSwitchLink(link){
+				ifm.src = link;
+			}
+			E.on('#S_List','click',function(e){
+				var t = e.target;
+				if(t.nodeName.toLowerCase() == 'a'){
+					e.preventDefault();
+					switchLink(t.href);
+					D.removeClass(curTarget,curCls);					
+					curTarget = t;
+					D.addClass(curTarget,curCls);
+				}
+			});
+			
+			//设置iframe高度
+			setInterval(function(){
+				try {
+					var ifmBody = ifm.contentWindow.document.body;
+					ifmBody.style.padding= 0;
+					ifm.style.height = ifmBody.offsetHeight + 'px';
+				} catch (e) {
+					
+				}				
+			},200);
+			
+		});
+	</script>  
+</body>
+</html>

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<project name="kissy-dpl-build" default="run" xmlns:ac="antlib:net.sf.antcontrib">
+    <description>KISSY DPL Build File</description>
+	<property name="charset" value="utf-8"/>
+    <dirname property="current.dir" file="${ant.file.kissy-dpl-build}"/>	
+	<property name="tools.dir" location="${current.dir}/../../kissy-tools/"/>	
+    <property name="src.dir" location="${current.dir}/src/"/>
+    <property name="build.dir" location="${current.dir}/build/"/>    
+
+    <target name="copy">
+        <mkdir dir="${build.dir}" />
+        <mkdir dir="${build.dir}/img" />
+        <mkdir dir="${build.dir}/css" />
+        <copy todir="${build.dir}/img">
+            <fileset dir="${src.dir}/img">
+                <include name="**/*.*"/>
+                <exclude name="**/*.psd"/>
+                <exclude name="**/*.db"/>
+            </fileset>
+        </copy>
+		<copy todir="${build.dir}/css" flatten="true">
+			<fileset dir="${src.dir}" includes="*/*.css" />
+		</copy>
+    </target>
+
+    <target name="concat">
+        <concat destfile="${build.dir}/css/dpl-pkg.css" encoding="${charset}" outputencoding="${charset}">
+            <path path="src/reset/reset.css"/>
+			<path path="src/layout/layout.css"/>
+			<path path="src/box/box.css"/>
+			<path path="src/accordion/accordion.css"/>
+            <path path="src/msg/msg.css"/>
+            <path path="src/tabs/tabs.css"/>
+            <path path="src/crumbs/crumbs.css"/>
+            <path path="src/flowsteps/flowsteps.css"/>
+            <path path="src/pagination/pagination.css"/>
+            <path path="src/loading/loading.css"/>
+            <path path="src/grid/grid.css"/>
+            <path path="src/tree/tree.css"/>
+            <path path="src/form/form.css"/>
+        </concat>
+    </target>
+
+    <target name="compress">
+        <apply executable="java" verbose="true" dest="${build.dir}/css" failonerror="true" parallel="false">
+            <fileset dir="${build.dir}/css"
+                     includes="**/*.css"
+                     excludes="**/*-min*.css"/>
+            <arg line="-jar"/>
+            <arg path="${tools.dir}/yuicompressor/yuicompressor.jar"/>
+            <arg line="--charset ${charset}"/>
+            <srcfile/>
+            <arg line="-o"/>
+            <targetfile/>
+            <mapper type="regexp" from="^(.*)\.(css)$" to="\1-min.\2"/>
+        </apply>
+    </target>
+	
+	<target name = "zip">
+		<zip destfile="${build.dir}/dpl.zip" basedir = "${build.dir}">
+			<include name="img/*.*"/>
+			<include name="css/*.*"/>
+		</zip>
+	</target>
+
+    <target name="run" depends="copy,concat,compress,zip">
+    </target>
+</project>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>布局(Layout) - 设计模式库</title>
+	<link rel="stylesheet" href="../reset/reset.css" />
+	<link rel="stylesheet" href="layout.css" />
+	<style>
+		body { padding:10px;font: 12px/150% tahoma, sans-serif; color: #333; }
+		#header { text-align: center; padding: 20px 0 10px; }
+		h1 { font: 22px georgia, serif; }
+		h3 { font: 14px courier new, monospace; margin-bottom: 5px; }
+		a { outline: none; text-decoration: none; }
+	    a { color: #36c; }
+	    a:hover, a:active { color: #f60; }
+	
+	    #content,
+	    .grid-m, .main-wrap, .col-sub, .col-extra {
+	        background: #F5F5F5 url(assets/grid-bg.png);
+	    }
+	    .grid-m, .main-wrap { background-color: #DDD; }
+	    .main-wrap .test-box { border-color: #CCC; }
+	    .col-sub { background-color: #CDE6FF; }
+	    .col-sub .test-box { border-color: #B3D9FF; }
+	    .col-extra { background-color: #DAF7D4; }
+	    .col-extra .test-box { border-color: #B3EFAA; }
+	
+	    .layout { margin-bottom: 20px; }
+		.test-box { font: 18px courier new, monospace; padding: 10px; height: 90px; line-height: 90px; border: #ccc 1px solid; text-align: center; }
+		.col-width { padding: 10px; }
+	
+	    #content { padding: 10px 0; clear: both; }
+		#header ul { float: right; }
+		#header li { float: left; padding: 10px; }
+		#footer { padding-bottom: 80px; }
+		#footer .top { float: right; padding: 20px; }
+	
+		.col-main .col-width { display: none; }
+		.w950 .col-main .col-width { display: inline; }
+	
+	    .w950 #header, .w950 #content, .w950 #footer { width: 950px }
+		
+		.s-title{padding:8px 0;font:bold 16px "Microsoft YaHei";border-bottom:1px dotted #ccc;} 
+		.s-section{padding:8px 0;overflow:hidden;}
+		
+		.s-view-code{display:block;margin-bottom:10px;text-align:right;}
+		.s-code{width:99%;height:150px;margin-bottom:10px;border:1px solid #ddd;}
+	</style>
+	<script src="../../assets/kissy.js"></script>
+    <script src="../../assets/kissy-docs.js"></script>
+</head>
+<body>
+	<h3 class="s-title">CSS</h3>
+	<div class="s-section">
+		<a href="../reset/reset.css">reset.css</a> +
+		<a href="layout.css">layout.css</a>
+	</div>
+
+	<h3 class="s-title">Demo</h3>
+    <h4>通栏：.grid-m</h4>
+	<div class="s-demo">
+	    <div class="layout grid-m">
+	        <div class="col-main">
+	            <div class="test-box">main<span class="col-width">950px</span></div>
+	        </div>
+	    </div>
+	</div>
+	<a class="s-view-code" href="#">显示源码</a>
+
+
+    <h4>两栏：.grid-s5m0</h4>
+	<div class="s-demo">
+	    <div class="layout grid-s5m0">
+	        <div class="col-main">
+	            <div class="main-wrap">
+	                <div class="test-box">main<span class="col-width">750px</span></div>
+	            </div>
+	        </div>
+	        <div class="col-sub">
+	            <div class="test-box">sub<span class="col-width">190px</span></div>
+	        </div>
+	    </div>
+	</div>
+	<a class="s-view-code" href="#">显示源码</a>
+
+
+    <h4>两栏：.grid-m0s5</h4>
+	<div class="s-demo">
+	    <div class="layout grid-m0s5">
+	        <div class="col-main">
+	            <div class="main-wrap">
+	                <div class="test-box">main<span class="col-width">750px</span></div>
+	            </div>
+	        </div>
+	        <div class="col-sub">
+	            <div class="test-box">sub<span class="col-width">190px</span></div>
+	        </div>
+	    </div>
+	</div>
+	<a class="s-view-code" href="#">显示源码</a>
+
+    <h4>三栏：.grid-s5m0e6</h4>
+	<div class="s-demo">
+	    <div class="layout grid-s5m0e6">
+	        <div class="col-main">
+	            <div class="main-wrap">
+	                <div class="test-box">main<span class="col-width">510px</span></div>
+	            </div>
+	        </div>
+	        <div class="col-sub">
+	            <div class="test-box">sub<span class="col-width">190px</span></div>
+	        </div>
+	        <div class="col-extra">
+	            <div class="test-box">extra<span class="col-width">230px</span></div>
+	        </div>
+	    </div>
+	</div>
+	<a class="s-view-code" href="#">显示源码</a>
+
+    <h4>三栏：.grid-e6m0s5</h4>
+	<div class="s-demo">
+	    <div class="layout grid-e6m0s5">
+	        <div class="col-main">
+	            <div class="main-wrap">
+	                <div class="test-box">main<span class="col-width">510px</span></div>
+	            </div>
+	        </div>
+	        <div class="col-sub">
+	            <div class="test-box">sub<span class="col-width">190px</span></div>
+	        </div>
+	        <div class="col-extra">
+	            <div class="test-box">extra<span class="col-width">230px</span></div>
+	        </div>
+	    </div>
+	</div>
+	<a class="s-view-code" href="#">显示源码</a>
+
+    <h4>三栏：.grid-m0e6s5</h4>
+	<div class="s-demo">
+	    <div class="layout grid-m0e6s5">
+	        <div class="col-main">
+	            <div class="main-wrap">
+	                <div class="test-box">main<span class="col-width">510px</span></div>
+	            </div>
+	        </div>
+	        <div class="col-sub">
+	            <div class="test-box">sub<span class="col-width">190px</span></div>
+	        </div>
+	        <div class="col-extra">
+	            <div class="test-box">extra<span class="col-width">230px</span></div>
+	        </div>
+	    </div>
+	</div>
+	<a class="s-view-code" href="#">显示源码</a>
+
+    <h3 class="s-title">对照图</h3>
+	<div class="s-section">
+		<img src="assets/grids-taobao.png" alt="淘宝常用栅格布局" />
+	</div>
+	
+	<h3 class="s-title">布局生成器</h3>
+	<div class="s-section">
+		<a href="layout-generator.html">布局生成器</a>
+	</div>
+
+</body>
+</html>
