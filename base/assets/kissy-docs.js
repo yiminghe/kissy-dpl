@@ -13,7 +13,7 @@ KISSY.ready(function(S){
     var TRIGGER_CLS = 's-view-code', DEMO_CLS = 's-demo', CODE_CLS = 's-code', 
         SHOW_CODE = '显示源码', HIDE_CODE = '隐藏源码';
     
-    E.on(doc.body,'click',function(e){
+    E.on(doc.body,'click',function(e){ 
         var t = e.target;
         if(D.hasClass(t,TRIGGER_CLS)){
             e.preventDefault();
