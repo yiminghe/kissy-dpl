@@ -85,3 +85,10 @@ a.s-current{color:#f60;text-decoration:underline;}
     padding:0 12px 0 0;
     background:url(crumbs.png) no-repeat 100% 50%;
 }
+
+/*手工api简单样式*/
+.s-api-title{font-weight:bold;}
+.s-api-method{margin:0 0 10px 20px;color:#f60;}
+.s-api-params{margin:0 0 10px 20px;margin-bottom:5px;}
+.s-api-params em{color:#04c;}
+.s-api-return{margin:0 0 10px 20px;}
