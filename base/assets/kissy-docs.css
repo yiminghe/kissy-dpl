@@ -69,6 +69,7 @@
 .s-list .s-list{margin-left:20px}
 .s-list li{margin:0;padding-left:14px;list-style:inside none;background:url(bullet.gif) no-repeat 0px 8px;}
 .s-list li li{background-image:url(sub-bullet.gif);}
+.s-list .s-desc{color:#888;}
 
 /*代码显示*/
 .s-view-code{display:block;margin:10px 0;text-align:right;}
