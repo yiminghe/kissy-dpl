@@ -72,8 +72,8 @@
 .s-list .s-desc{color:#888;}
 
 /*代码显示*/
-.s-view-code{display:block;margin:10px 0;text-align:right;}
-.s-code{width:99%;height:150px;margin-bottom:10px;border:1px solid #ddd;}
+.s-view-code{display:block;margin:10px 0;}
+.s-code{width:99%;margin-bottom:10px;border:1px solid #ddd;}
 
 a.s-current{color:#f60;text-decoration:underline;}
 

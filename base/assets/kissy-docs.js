@@ -27,10 +27,23 @@ KISSY.ready(function(S){
     });
 
     function createCode(trigger,demo){
-        var code = D.create('<textarea class="'+CODE_CLS+'"></textarea>');
-        D.insertAfter(code,trigger);
-        code.value = S.UA.ie ? '请使用非ie内核刘浏览器查看。' : formatCode(demo.innerHTML);
-        return code;
+		var code = demo.innerHTML;
+		var lines = code.match(/\n/g);
+		if(lines && lines.length){
+			if(lines.length>30){
+				lines = 30;
+			}else{
+				lines= lines.length;
+			}
+		}else{
+			lines = 10;
+		}
+		lines = lines * 1.5;
+		
+        var codeBox = D.create('<textarea class="'+CODE_CLS+'" style="height:'+lines+'em"></textarea>');
+        D.insertAfter(codeBox,trigger);
+        codeBox.value = S.UA.ie ? '请使用非ie内核刘浏览器查看。' : formatCode(code);
+        return codeBox;
     }
 
     function formatCode(code){
@@ -49,11 +62,6 @@ KISSY.ready(function(S){
             trigger.innerHTML = SHOW_CODE;
         }
     }
-
-    E.on(doc.body,'mouseover',function(e){
-        var t = e.target;
-        if(D.hasClass(t,CODE_CLS)) t.select(); 
-    })
 	
 	
 });
