@@ -336,7 +336,8 @@ mark { background: #ff0; }
 
 .loading{position:absolute;z-index:10000;}
 .loading .mask{left:0;top:0;width:100%;height:100%;background:url(../img/bg-transparent.png);_background:#000;_filter:alpha(opacity=20);}
-.loading .icon{position:absolute;width:220px;height:19px;left:50%;top:50%;margin:-19px 0 0 -110px;padding-top:18px;font-style:normal;text-align:center;background:url(../img/loading.gif) no-repeat;}
+.loading .text{position:absolute;height:19px;width:100%;top:50%;margin-top:-10px;text-align:center;}
+.loading .text i{padding-left:20px;font-style:normal;background:url(../img/loading.gif) no-repeat;}
 
 
 /**
@@ -346,7 +347,7 @@ mark { background: #ff0; }
 
 /*一般设定*/
 .grid{width:100%;overflow:hidden;}
-.grid-zebra .row-even td{background-color:#f9f9f9;}
+.grid-zebra .row-even td{background-color:#fafafa;}
 .grid .table{width:100%;border:1px solid #ccc;}
 .grid caption{text-align:left;}
 .grid th,
